@@ -1,132 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 /* ================= HEADER ================= */
 
 .header {
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;   /* meer ruimte links/rechts */
-    border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px; /* meer ruimte links/rechts */
+  border-bottom: 1px solid #e0e0e0;
 }
 
 /* LOGO */
 
 .logo img {
-    width: 200px;   /* groter logo */
-    height: auto;
-    margin-top: ;
+  width: 200px; /* groter logo */
+  height: auto;
 }
 
 /* NAVIGATIE */
 
 nav a {
-    margin-left: 40px;     /* meer ruimte tussen menu items */
-    text-decoration: none;
-    color: black;
-    font-size: 17px;       /* groter menu */
-    font-weight: 500;
+  margin-left: 40px; /* meer ruimte tussen menu items */
+  text-decoration: none;
+  color: #ff5656;
+  font-size: 17px; /* groter menu */
+  font-weight: 500;
 }
 
 nav a:hover {
-    color: #5c7c8a;
+  color: #5c7c8a;
 }
 
 /* ================= CONTACT SECTION ================= */
 
 .contact-section {
-    width: 100%;
-    background-color: #dcdcdc;   /* volledige grijze achtergrond */
-    padding: 80px 0;
+  width: 100%;
+  background-color: #dcdcdc; /* volledige grijze achtergrond */
+  padding: 80px 0;
 }
 
 .contact-container {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: #e6e6e6;
-    padding: 60px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  padding: 60px;
 }
 
 /* LINKERKANT */
 
 .contact-info {
-    width: 40%;
+  width: 40%;
 }
 
 .contact-info h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .contact-info p {
-    margin-bottom: 12px;
-    font-size: 16px;
+  margin-bottom: 12px;
+  font-size: 16px;
 }
 
 /* RECHTERKANT */
 
 .contact-form {
-    width: 50%;
+  width: 50%;
 }
 
 .contact-form h2 {
-    margin-bottom: 25px;
-    font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 24px;
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 14px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    background-color: #f9f9f9;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #f9f9f9;
 }
 
 .contact-form textarea {
-    height: 140px;
-    resize: none;
+  height: 140px;
+  resize: none;
 }
 
 button {
-    padding: 14px;
-    background-color: #5c7c8a;
-    color: white;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
+  padding: 14px;
+  background-color: #5c7c8a;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #3e5f6d;
+  background-color: #3e5f6d;
 }
 
 /* ================= FOOTER ================= */
 
 .footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color: white;
-    border-top: 1px solid #e0e0e0;
-    font-size: 14px;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+.kamers {
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Semi-bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #ff5656;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  font-style: normal;
+  color: #000000af;
+}
+.TwinKamerTitle {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.TwinKamerText {
+  color: #807070;
+  font-size: 20px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+img {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
 }
