@@ -27,7 +27,6 @@ body {
 .logo img {
     width: 200px;   /* groter logo */
     height: auto;
-    margin-top: ;
 }
 
 /* NAVIGATIE */
@@ -129,4 +128,12 @@ button:hover {
     background-color: white;
     border-top: 1px solid #e0e0e0;
     font-size: 14px;
+}
+
+/* ================= LOGIN ================= */
+
+.login-section {
+    width: 100%;
+    background-color: #dcdcdc;
+    padding: 80px 0;
 }
