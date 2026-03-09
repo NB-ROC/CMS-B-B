@@ -159,9 +159,8 @@ button:hover {
     gap: 25px;
 }
 
-.faciliteiten-section{
+.faciliteiten-section, .room-section{
     padding: 30px;
-    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -172,7 +171,6 @@ button:hover {
 
 .faciliteiten-info-container-row{
     width: 95%;
-    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -212,6 +210,44 @@ button:hover {
 .faciliteiten-icon{
     width: 40px;
     height: fit-content;
+}
+
+.room-image-row-container{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.room-image-container{
+    color: white;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bedroom{
+    background-image: url(../images/bedroom.png);
+    background-size: cover;
+}
+
+.luxe-suite{
+    background-image: url(../images/luxeSuit.png);
+    background-size: cover;
+}
+
+
+.kitchen{
+    background-image: url(../images/kitchen.png);
+    background-size: cover;
 }
 
 /* ================= FOOTER ================= */
