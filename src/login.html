@@ -23,21 +23,28 @@
 </header>
 
 <div class="login-container">
-    <div class="inlog-container">
-        <h1>Inloggen</h1>
-        <div class="no-account-container">
-            <p>Nog geen account?</p>
-            <p>Aanmelden</p>
-        </div>
+
+    <h1>Inloggen</h1>
+
+    <div class="no-account-container">
+        <p>Nog geen account?</p>
+        <a href="#">Aanmelden</a>
     </div>
-    <div class="inlog-container">
-        <p>Email Adress:</p>
-        <form></form>
-    </div>
-    <div class="inlog-container">
-        <p>Wachtwoord:</p>
-        <form></form>
-    </div>
+
+    <form class="login-form">
+
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" placeholder="voorbeeld@voorbeeld.com">
+
+        <label for="password">Wachtwoord</label>
+        <input type="password" id="password">
+
+        <button type="submit">Inloggen</button>
+
+    </form>
+
+    <a class="forgot-password" href="#">Wachtwoord vergeten?</a>
+
 </div>
 
 <footer class="footer">
