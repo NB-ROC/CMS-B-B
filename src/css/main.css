@@ -397,3 +397,116 @@ button:hover {
     text-decoration: underline;
     color: #333;
 }
+
+/* ================= KAMERS SECTION ================= */
+.kamers {
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Semi-bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #ff5656;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  font-style: normal;
+  color: #000000af;
+}
+.TwinKamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.TwinKamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.imgTwinKamer {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.imgTwinKamer2 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.imgTwinKamer2.Rechts {
+  margin-left: 700px;
+}
+.Tweepersoonkamer {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 700px;
+}
+.TweepersoonkamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+
+  margin-top: 100px;
+}
+.TweepersoonkamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+.allimages {
+  display: flex;
+  flex-direction: column;
+}
+.GalerijContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin-left: 50px;
+  height: 200px;
+}
+.GalerijTitle {
+  color: #ff5656;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-bottom: 15px;
+}
+
+.GalerijSubText {
+  color: #807070;
+  font-size: 20px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
