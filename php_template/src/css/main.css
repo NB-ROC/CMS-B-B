@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;   /* meer ruimte links/rechts */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 200px;   /* groter logo */
+    height: auto;
+    
+}
+
+/* NAVIGATIE */
+
+nav a {
+    margin-left: 40px;     /* meer ruimte tussen menu items */
+    text-decoration: none;
+    color: #ff5656;
+    font-size: 17px;       /* groter menu */
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ec3131;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    width: 100%;
+    background-color: #dcdcdc;   /* volledige grijze achtergrond */
+    padding: 80px 0;
+}
+
+.contact-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 60px;
+}
+
+/* LINKERKANT */
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* RECHTERKANT */
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #f9f9f9;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+button {
+    padding: 14px;
+    background-color: #8a855c;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e5f6d;
+}
+
+.head-section{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/houseStockImage.png);
+    background-size: cover;
+    background-color: lightgray;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.head-section-header-text{
+    font-size: 60px;
+}
+.head-section-text{
+    font-size: 18px;
+}
+
+.button-red{
+    background-color: #ff5656;
+    color: white;
+    border-radius: 10px;
+}
+.button-white{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.head-section-button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.faciliteiten-section, .room-section{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.faciliteiten-info-container-row{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faciliteiten-info-container-column{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faciliteiten-info-box-container{
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #D2B8B8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.faciliteiten-info-box-container > p{
+    color: #D2B8B8;
+    font-size: 20px;
+}
+
+.faciliteiten-info-box-container > h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.faciliteiten-icon{
+    width: 40px;
+    height: fit-content;
+}
+
+.room-image-row-container{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.room-image-container{
+    color: white;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bedroom{
+    background-image: url(../images/bedroom.png);
+    background-size: cover;
+}
+
+.luxe-suite{
+    background-image: url(../images/luxeSuit.png);
+    background-size: cover;
+}
+
+
+.kitchen{
+    background-image: url(../images/kitchen.png);
+    background-size: cover;
+}
+
+.resevering-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.resevering-container > img{
+    width: 40vw;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.resevering-payment-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resevering-payment-container > h2{
+    font-size: 64px;
+}
+
+.resevering-date-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.check-in-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+}
+.check-out-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+}
+
+.resevering-persons-container{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+/* ================= LOGIN ================= */
+
+.login-container {
+    height: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.login-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.no-account-container {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.no-account-container a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 10px;
+}
+
+.login-form label {
+    font-size: 14px;
+}
+
+.login-form input {
+    height: 38px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.login-form button {
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c6c6c;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+.forgot-password {
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: #333;
+}
+
+/* ================= KAMERS SECTION ================= */
+.kamers {
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Semi-bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #ff5656;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  font-style: normal;
+  color: #000000af;
+}
+.TwinKamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.TwinKamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.imgTwinKamer {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.imgTwinKamer2 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.imgTwinKamer2.Rechts {
+  margin-left: 700px;
+}
+.Tweepersoonkamer {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 700px;
+}
+.TweepersoonkamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+
+  margin-top: 100px;
+}
+.TweepersoonkamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+.allimages {
+  display: flex;
+  flex-direction: column;
+}
+.GalerijContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin-left: 50px;
+  height: 200px;
+}
+.GalerijTitle {
+  color: #ff5656;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-bottom: 15px;
+}
+
+.GalerijSubText {
+  color: #807070;
+  font-size: 20px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+
+.gallery {
+  column-count: 2; /* 2 coloane ca în exemplu */
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    column-count: 4;
+  }
+}
