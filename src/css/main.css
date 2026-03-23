@@ -195,6 +195,10 @@ button:hover {
     padding: 20px;
     box-sizing: border-box;
     padding-bottom: 50px;
+    transition: 0.5s;
+}
+.faciliteiten-info-box-container:hover{
+    transform: scale(1.05);
 }
 
 .faciliteiten-info-box-container > p{
