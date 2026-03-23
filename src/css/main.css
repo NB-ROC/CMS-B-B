@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -375,16 +377,212 @@ button:hover {
 
 /* ================= LOGIN ================= */
 
-.login-section {
-    width: 100%;
-    background-color: #dcdcdc;
-    padding: 80px 0;
-}
-
 .login-container {
-
+    height: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.inlog-container {
-    
+.login-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.no-account-container {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.no-account-container a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 10px;
+}
+
+.login-form label {
+    font-size: 14px;
+}
+
+.login-form input {
+    height: 38px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.login-form button {
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c6c6c;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+.forgot-password {
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: #333;
+}
+
+/* ================= KAMERS SECTION ================= */
+.kamers {
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Semi-bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #ff5656;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  font-style: normal;
+  color: #000000af;
+}
+.TwinKamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.TwinKamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.imgTwinKamer {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.imgTwinKamer2 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.imgTwinKamer2.Rechts {
+  margin-left: 700px;
+}
+.Tweepersoonkamer {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 700px;
+}
+.TweepersoonkamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+
+  margin-top: 100px;
+}
+.TweepersoonkamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+.allimages {
+  display: flex;
+  flex-direction: column;
+}
+.GalerijContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin-left: 50px;
+  height: 200px;
+}
+.GalerijTitle {
+  color: #ff5656;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-bottom: 15px;
+}
+
+.GalerijSubText {
+  color: #807070;
+  font-size: 20px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+
+.gallery {
+  column-count: 2; /* 2 coloane ca în exemplu */
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    column-count: 4;
+  }
 }
