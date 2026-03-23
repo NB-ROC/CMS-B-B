@@ -16,30 +16,42 @@
             <a href="index.html">Home</a>
             <a href="kamers.html">Kamers</a>
             <a href="galerij.html">Galerij</a>
-            <a href="resevering.html">Reserveren</a>
+            <a href="reservering.html">Reserveren</a>
             <a href="contact.html">Contact</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
 
     <main>
-        <div class="resevering-container">
+        <div class="reservering-container">
             <img src="images/luxeSuit.png" alt="Room">
 
-            <div class="resevering-payment-container">
-                <h2>Room name</h2>
-                <div class="resevering-date-container">
-                    <div class="check-in-container">checkin</div>
-                    <div class="check-out-container">checkout</div>
+            <form class="reservering-column-container">
+                <h2>Room</h2>
+
+                <div class="column-container">
+                    <label>Check in en Check out datum</label>
+                    <div class="reservering-date">
+                        <input class="reservering-checkin" type="date">
+                        <input class="reservering-checkout" type="date">
+                    </div>
                 </div>
-                <div class="resevering-persons-container">
-                    persons
+
+                <div class="column-container">
+                    <label>Personen</label>
+                    <input class="reservering-persons" type="number" min="1" max="5">
                 </div>
-                <div>prijs per nacht</div>
-                <div class="payment-container">
-                    <button class="button-red">Betalen</button>
+                <p>Prijs per nacht: $67</p>
+
+                <div class="row-container">
+                    <input class="reservering-submit-button" type="submit" value="Submit">
+                    <div class="reservering-icon-container">
+                        <img src="images/ideal.png" alt="ideal">
+                        <img src="images/mastercard.png" alt="mastercard">
+                        <img src="images/maestro.png" alt="maestro">
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 
