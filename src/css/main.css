@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -195,6 +197,10 @@ button:hover {
     padding: 20px;
     box-sizing: border-box;
     padding-bottom: 50px;
+    transition: 0.5s;
+}
+.faciliteiten-info-box-container:hover{
+    transform: scale(1.05);
 }
 
 .faciliteiten-info-box-container > p{
@@ -250,72 +256,112 @@ button:hover {
     background-size: cover;
 }
 
-.resevering-container{
+.reservering-container{
     display: flex;
     flex-direction: row;
     gap: 2vw;
+    width: fit-content;
+    margin: 50px auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
 }
 
-.resevering-container > img{
+.reservering-container > img{
     width: 40vw;
     height: fit-content;
     border-radius: 5px;
 }
 
-.resevering-payment-container{
+.reservering-column-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.resevering-payment-container > h2{
-    font-size: 64px;
+.reservering-column-container > h2{
+    font-size: 4rem;
 }
 
-.resevering-date-container{
-    display: flex;
-    flex-direction: row;
-}
-
-.check-in-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 200px;
-    height: 50px;
-    border-width: 2px;
+.reservering-checkin{
+    padding: 5px 10px;
+    color: #4b4b4b;
+    border-radius: 5px;
     border-style: solid;
+    border-width: 1px;
     border-color: #B3B3B3;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px;
-    align-items: center;
-}
-.check-out-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    width: 200px;
-    height: 50px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #B3B3B3;
-    border-left: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px;
-    align-items: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
 }
 
-.resevering-persons-container{
-    width: 400px;
-    height: 50px;
+.reservering-checkout{
+    padding: 5px 10px;
+    color: #4b4b4b;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B3B3B3;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.reservering-date>input:focus{
+    outline-style: none;
+}
+
+
+.reservering-date{
+    display: flex;
+    flex-direction: row;
+}
+
+.reservering-persons{
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B3B3B3;
+}
+.reservering-persons:focus{
+    outline-style: none;
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+    color: #4b4b4b;
+}
+
+.reservering-submit-button{
+    background-color: #FF5656;
+    color: white;
+    padding: 10px 20px;
+    width: fit-content;
+    font-size: 1.2rem;
     border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #B3B3B3;
+    border-style: none;
+    cursor: pointer;
+}
+
+.reservering-submit-button:hover{
+    background-color: #cf4040;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reservering-icon-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.reservering-icon-container>img{
+    height: 25px;
+    width: fit-content;
 }
 
 /* ================= FOOTER ================= */
@@ -396,4 +442,147 @@ button:hover {
     margin-top: 5px;
     text-decoration: underline;
     color: #333;
+}
+
+/* ================= KAMERS SECTION ================= */
+.kamers {
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Semi-bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #ff5656;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  font-style: normal;
+  color: #000000af;
+}
+.TwinKamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.TwinKamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 50px;
+}
+.imgTwinKamer {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.imgTwinKamer2 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.imgTwinKamer2.Rechts {
+  margin-left: 700px;
+}
+.Tweepersoonkamer {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-left: 700px;
+}
+.TweepersoonkamerTitle {
+  color: #807070;
+  font-size: 40px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+
+  margin-top: 100px;
+}
+.TweepersoonkamerText {
+  color: #807070;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+.allimages {
+  display: flex;
+  flex-direction: column;
+}
+.GalerijContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin-left: 50px;
+  height: 200px;
+}
+.GalerijTitle {
+  color: #ff5656;
+  font-size: 30px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1px;
+  margin-bottom: 15px;
+}
+
+.GalerijSubText {
+  color: #807070;
+  font-size: 20px;
+  font-family: "Extra Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+
+  margin-bottom: 60px;
+}
+
+.gallery {
+  column-count: 2; /* 2 coloane ca în exemplu */
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    column-count: 4;
+  }
 }
