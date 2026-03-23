@@ -250,6 +250,74 @@ button:hover {
     background-size: cover;
 }
 
+.resevering-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.resevering-container > img{
+    width: 40vw;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.resevering-payment-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resevering-payment-container > h2{
+    font-size: 64px;
+}
+
+.resevering-date-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.check-in-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+}
+.check-out-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+}
+
+.resevering-persons-container{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B3B3B3;
+}
+
 /* ================= FOOTER ================= */
 
 .footer {
