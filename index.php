@@ -1,20 +1,16 @@
 <?php
-$db_host = 'db';
+$db_host = getenv('DB_HOST');
 $db_name = getenv('DB_DATABASE');
 $db_user = getenv('DB_USERNAME');
 $db_pass = getenv('DB_PASSWORD');
-
 
 $pdo = new PDO(
     "mysql:host=$db_host;dbname=$db_name",
     $db_user,
     $db_pass,
-    [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_TIMEOUT => 5
-    ]
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, PDO::ATTR_TIMEOUT => 5]
 );
+
 ?>
 
 <!DOCTYPE html>
