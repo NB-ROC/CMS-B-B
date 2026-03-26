@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservering</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="images/imagegroot.png" alt="Calm Corner hotel">    
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="kamers.html">Kamers</a>
+            <a href="galerij.html">Galerij</a>
+            <a href="reservering.html">Reserveren</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservering-container">
+            <img src="images/luxeSuit.png" alt="Room">
+
+            <form class="reservering-column-container">
+                <h2>Room</h2>
+
+                <div class="column-container">
+                    <label>Check in en Check out datum</label>
+                    <div class="reservering-date">
+                        <input class="reservering-checkin" type="date">
+                        <input class="reservering-checkout" type="date">
+                    </div>
+                </div>
+
+                <div class="column-container">
+                    <label>Personen</label>
+                    <input class="reservering-persons" type="number" min="1" max="5">
+                </div>
+                <p>Prijs per nacht: $67</p>
+
+                <div class="row-container">
+                    <input class="reservering-submit-button" type="submit" value="Submit">
+                    <div class="reservering-icon-container">
+                        <img src="images/ideal.png" alt="ideal">
+                        <img src="images/mastercard.png" alt="mastercard">
+                        <img src="images/maestro.png" alt="maestro">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Calm Corner · Contact · Reserveren</p>
+    </footer>
+    
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
