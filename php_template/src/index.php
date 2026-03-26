@@ -6,6 +6,11 @@ use App\Controller\DatabaseController;
 session_start();
 isset($_GET['page']) ? $page = $_GET['page'] : $page = "home";
 
+if (isset($_SESSION["activeuser"])) {
+    var_dump($_SESSION["activeuser"]);
+}
+
+
 $DatabaseController = new DatabaseController();
 ?>
 <!DOCTYPE html>
