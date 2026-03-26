@@ -1,0 +1,16 @@
+{
+  "name": "bnb_project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "twbuild": "npx @tailwindcss/cli -i ./twinput.css -o ./src/css/tailwind.css"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
