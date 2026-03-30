@@ -1,2 +1,4 @@
+@echo off
 docker compose down
-docker compose up
+docker compose up -d
+pause
