@@ -12,6 +12,7 @@ if (isset($_SESSION["activeuser"])) {
 
 
 $DatabaseController = new DatabaseController();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
