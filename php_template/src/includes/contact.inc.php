@@ -10,12 +10,22 @@
         <div class="contact-form">
             <h2>Laten we contact maken</h2>
 
-            <form>
-                <input type="text" placeholder="Uw naam" required>
-                <input type="email" placeholder="E-mailadres" required>
-                <input type="tel" placeholder="Telefoonnummer">
-                <textarea placeholder="Uw bericht"></textarea>
+            <form method="POST" action="php/contact.php">
+
+                <label for="name">Uw naam</label>
+                <input type="text" id="name" name="name" placeholder="Uw naam" required>
+
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="E-mailadres" required>
+
+                <label for="phone">Telefoonnummer</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
+
+                <label for="message">Uw bericht</label>
+                <textarea id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
+
                 <button type="submit">Bericht verzenden</button>
+
             </form>
         </div>
     </div>
