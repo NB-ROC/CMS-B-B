@@ -5,7 +5,7 @@ from rich.console import Console
 
 import os
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 
 load_dotenv(BASE_DIR / ".env")
 
@@ -20,8 +20,8 @@ def get_name(input:str) -> str :
 with console.status("Getting ready to build database...", spinner="dots12"):
     databaseconn = connect(
         host="localhost",
-        user=os.getenv("DB_USERNAME"),
-        password=os.getenv("DB_PASSWORD")
+        user="root",
+        password=os.getenv("DB_ROOT_PASSWORD")
     )
 
     databaseconn.autocommit = True

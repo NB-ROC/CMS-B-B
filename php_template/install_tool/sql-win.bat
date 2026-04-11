@@ -1,5 +1,6 @@
-@echo off
-python3 -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-python3 .\initDB.py
+call python3 -m venv venv
+pause
+call .\venv\Scripts\activate
+call pip install -r requirements.txt
+pause
+call python3 .\initDB.py
