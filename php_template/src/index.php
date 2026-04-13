@@ -2,6 +2,7 @@
 require_once("AutoLoad.php");
 
 use App\Controller\DatabaseController;
+use App\Controller\GeneralController;
 
 session_start();
 isset($_GET['page']) ? $page = $_GET['page'] : $page = "home";
@@ -12,6 +13,7 @@ if (isset($_SESSION["activeuser"])) {
 
 
 $DatabaseController = new DatabaseController();
+$GeneralController = new GeneralController();
 
 ?>
 <!DOCTYPE html>

@@ -1,5 +1,6 @@
 <?php
 require_once("../AutoLoad.php");
+
 use App\Controller\DatabaseController;
 
 session_start();
@@ -13,6 +14,7 @@ $un = $_POST["username"];
 $pw = $_POST["password"];
 
 $dbcontrol = new DatabaseController();
+
 
 $activeuser = $dbcontrol->login($un, $pw);
 
