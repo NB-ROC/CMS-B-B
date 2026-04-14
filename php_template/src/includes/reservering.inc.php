@@ -89,7 +89,12 @@
         }
         if(checkOut.toDateString() === new Date().toDateString())
         {
-            alert("Check out date cannot be today")
+            alert("Check out date cannot be the same")
+            return null;
+        }
+        if(checkOut.toDateString() === checkIn.toDateString())
+        {
+            alert("Check out and check in date cannot be today")
             return null;
         }
         if(checkIn > checkOut)
