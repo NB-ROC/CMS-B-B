@@ -42,27 +42,73 @@
         </div>
 
         <!-- Reservering section -->
-        <form action="php/reservering" method="post" class="reservering-booking-section">
-            <!-- Checkin CheckOut section -->
-            <div class="reservering-date-container">
-                <div class="reservering-input-check-in-date">
-                    <label class="reservering-date-text">Check in</label>
-                    <input type="date" id="checkInDate" class="reservering-date-input" name="checkIn" value="<?php echo $today; ?>">
+        <div class="reservering-booking-section">
+            <!-- action="php/reservering" -->
+            <form id="bookingFrom">
+                <!-- Checkin CheckOut section -->
+                <div class="reservering-date-container">
+                    <div class="reservering-input-check-in-date">
+                        <label class="reservering-date-text">Check in</label>
+                        <input id="checkIn" type="date" id="checkInDate" class="reservering-date-input" name="checkIn" value="<?php echo $today; ?>">
+                    </div>
+
+                    <div class="reservering-input-check-out-date">
+                        <label class="reservering-date-text">Check Out</label>
+                        <input id="checkOut" type="date" class="reservering-date-input" name="checkOut">
+                    </div>
+                </div>
+                <!-- Total person section -->
+                <div class="total-persons-container">
+                    <label for="totalPersons">Totaal personen -Max person: 4</label>
+                    <input id="totalPersons" value="1" type="number" min="1" step="1" max="4" name="persons">
                 </div>
 
-                <div class="reservering-input-check-out-date">
-                    <label class="reservering-date-text">Check Out</label>
-                    <input type="date" class="reservering-date-input" name="checkOut">
-                </div>
-            </div>
-            <!-- Total person section -->
-            <div class="total-persons-container">
-                <label for="totalPersons">Totaal personen -Max person: 4</label>
-                <input id="totalPersons" value="1" type="number" min="1" step="1" max="4" name="persons">
-            </div>
+                <!-- Submit button -->
+            </form>
+            <button class="booking-button" onclick="ValidateCheckOutDate()">Boek nu</button>
+        </div>
 
-            <!-- Submit button -->
-            <input class="booking-button" type="submit" value="Boek nu">
-        </form>
     </div>
 </div>
+
+<script>
+    function ValidateCheckOutDate(){
+        let today = new Date();
+        let totalPersons = document.getElementById("totalPersons").value;
+        let checkOut = new Date(document.getElementById("checkOut").value);
+        let checkIn = new Date(document.getElementById("checkIn").value);
+
+        console.log(checkIn);
+        console.log(checkOut.toDateString());
+
+
+        if(isNaN(checkOut) || isNaN(checkIn) || totalPersons <= 0)
+        {
+            alert("Values cannot be empty")
+            return null;
+        }
+        if(checkOut.toDateString() === new Date().toDateString())
+        {
+            alert("Check out date cannot be today")
+            return null;
+        }
+        if(checkIn > checkOut)
+        {
+            alert("Check out cant be before check in date")
+            return null;
+        }
+        if(checkIn.setHours(0, 0, 0, 0) < today.setHours(0, 0, 0, 0))
+        {
+            alert("Check in date cannot be in the past")
+            return null;
+        }
+
+        const form = document.getElementById("bookingFrom");
+        fetch("php/reservering", {
+            method: "POST",
+            body: new URLSearchParams(new FormData(form))
+        })
+        .then(res => res.text())
+        .then(data => console.log(data));
+    }
+</script>

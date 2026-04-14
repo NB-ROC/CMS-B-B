@@ -674,3 +674,7 @@ h2 {
     padding: 5px;
     font-size: 1.5rem;
 }
+
+.booking-button:hover{
+    background-color: #ec4949;
+}
