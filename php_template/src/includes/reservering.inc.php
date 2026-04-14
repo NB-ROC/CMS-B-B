@@ -109,7 +109,7 @@
         }
 
         const form = document.getElementById("bookingFrom");
-        fetch("php/reservering", {
+        fetch("php/reservering.php", {
             method: "POST",
             body: new URLSearchParams(new FormData(form))
         })
