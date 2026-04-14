@@ -10,8 +10,8 @@ class DatabaseSingleton
     {
         if (DatabaseSingleton::$conn == false) {
             $servername = "db";
-            $username = getenv('DB_USERNAME');
-            $password = getenv('DB_PASSWORD');
+            $username = "root";
+            $password = getenv('DB_ROOT_PASSWORD');
             $dbname = getenv('DB_DATABASE');
 
             try {
