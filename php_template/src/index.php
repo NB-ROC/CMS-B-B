@@ -38,9 +38,11 @@ $GeneralController = new GeneralController();
         <?php include("includes/navbar.inc.php") ?>
     </header>
 
-    <main>
-        <?php include("includes/$page.inc.php") ?>
-    </main>
+<main>
+    <?php include("includes/$page.inc.php") ?>
+
+    <?php include("includes/review.inc.php") ?>
+</main>
 
     <footer>
         <p>© 2026 Calm Corner · Contact · Reserveren</p>

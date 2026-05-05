@@ -1,3 +1,48 @@
+<?php
+use App\Statics\DatabaseSingleton;
+
+isset(DatabaseSingleton::$conn) ?: DatabaseSingleton::makeCon();
+
+$conner = DatabaseSingleton::$conn;
+
+// $sql = "SELECT * FROM Kamers WHERE :Kamer1";
+
+// $stmt = $conner->prepare($sql);
+// $stmt->execute(["Kamer1" => "kamerID = 5"]);
+
+// $res = $stmt->fetchAll();
+// // SELECT * FROM Customers
+// // WHERE Country = 'Mexico';
+
+// // Placeholder variabelen
+// $twinFoto = "images/002c3d69-1496-4f82-a20a-f538f8ef7934.avif";
+// $twinNaam = "Twin Kamer";
+// $twinPrijs = "€95 per nacht";
+
+// $deluxeFoto = "images/2838a928-5577-4fba-8b79-fd66c04fed90.avif";
+// $deluxeNaam = "Deluxe Tweepersoonskamer";
+// $deluxePrijs = "€125 per nacht";
+
+
+$res = [
+  "test",
+  "tester"
+];
+
+foreach ($res as $itenm) {
+  //iterate and fill template
+  echo "
+  <div class='kamers'>
+  <h2>$itenm</h2>
+  <span class='subtitle'>Ontdek onze stijlvol ingerichte kamers, waar comfort en elegantie samenkomen.</span>
+  </div>
+  ";
+}
+
+?>
+
+
+
 <div class="kamers">
   <h2>Onze Kamers</h2>
   <span class="subtitle">Ontdek onze stijlvol ingerichte kamers, waar comfort en elegantie

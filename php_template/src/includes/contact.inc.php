@@ -1,3 +1,7 @@
+<?php
+use App\Controller\GeneralController;
+?>
+
 <section class="contact-section">
     <div class="contact-container">
         <div class="contact-info">
@@ -10,21 +14,23 @@
         <div class="contact-form">
             <h2>Laten we contact maken</h2>
 
-            <form method="POST" action="php/contact.php">
+            <?php
+            echo ("<form method='POST' action=" . GeneralController::linkToAction('contact') . ">");
+            ?>
 
-                <label for="name">Uw naam</label>
-                <input type="text" id="name" name="name" placeholder="Uw naam" required>
+            <label for="name">Uw naam</label>
+            <input type="text" id="name" name="name" placeholder="Uw naam" required>
 
-                <label for="email">E-mailadres</label>
-                <input type="email" id="email" name="email" placeholder="E-mailadres" required>
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="E-mailadres" required>
 
-                <label for="phone">Telefoonnummer</label>
-                <input type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
+            <label for="phone">Telefoonnummer</label>
+            <input type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
 
-                <label for="message">Uw bericht</label>
-                <textarea id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
+            <label for="message">Uw bericht</label>
+            <textarea id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
 
-                <button type="submit">Bericht verzenden</button>
+            <button type="submit">Bericht verzenden</button>
 
             </form>
         </div>
