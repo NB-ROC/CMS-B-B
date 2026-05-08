@@ -678,3 +678,19 @@ h2 {
 .booking-button:hover{
     background-color: #ec4949;
 }
+
+/* ================= Upload files SECTION ================= */
+.upload-files-main-section{
+    height: 100vh;
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+
+.upload-file-styling{
+    border-radius: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 15px;
+    width: fit-content;
+}
