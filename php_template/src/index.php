@@ -40,11 +40,10 @@ $GeneralController = new GeneralController();
 
 <main>
     <?php include("includes/$page.inc.php") ?>
-
-    <?php include("includes/review.inc.php") ?>
 </main>
 
     <footer>
+        <?php include("includes/review.inc.php") ?>
         <p>© 2026 Calm Corner · Contact · Reserveren</p>
     </footer>
 </body>
