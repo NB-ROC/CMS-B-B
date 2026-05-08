@@ -78,10 +78,6 @@
         let checkOut = new Date(document.getElementById("checkOut").value);
         let checkIn = new Date(document.getElementById("checkIn").value);
 
-        console.log(checkIn);
-        console.log(checkOut.toDateString());
-
-
         if(isNaN(checkOut) || isNaN(checkIn) || totalPersons <= 0)
         {
             alert("Values cannot be empty")
@@ -105,6 +101,11 @@
         if(checkIn.setHours(0, 0, 0, 0) < today.setHours(0, 0, 0, 0))
         {
             alert("Check in date cannot be in the past")
+            return null;
+        }
+        if(totalPersons > 4)
+        {
+            alert("The total persons cannot be higher than 4")
             return null;
         }
 

@@ -3,8 +3,11 @@ require_once("../AutoLoad.php");
 
 use App\Controller\DatabaseController;
 
-$_POST["checkIn"];
-$_POST["checkOut"];
-$_POST["persons"];
+$checkin= $_POST["checkIn"];
+$checkOut = $_POST["checkOut"];
+$persons = $_POST["persons"];
 
-print("wow");
+print($checkin);
+print($checkOut);
+print($persons);
+

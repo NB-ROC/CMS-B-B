@@ -3,7 +3,7 @@
 <!-- Main -->
 <div class="upload-files-main-section">
   <!-- Form section -->
-  <form action="upload.php" method="post" class="reservering-booking-section">
+  <form action="php/upload.php" method="post" class="reservering-booking-section">
     <H2>Upload a file</H2>
     <p>Testing page to upload images for the website.</p>
     <!-- upload file section -->
