@@ -9,4 +9,5 @@
     <a href="index.php?page=resevering">Reserveren</a>
     <a href="index.php?page=contact">Contact</a>
     <a href="index.php?page=login">Login</a>
+    <a href="index.php?page=admin">Admin</a>
 </nav>
