@@ -42,8 +42,12 @@ $GeneralController = new GeneralController();
         <?php include("includes/$page.inc.php") ?>
     </main>
 
-    <footer>
-        <p>© 2026 Calm Corner · Contact · Reserveren</p>
+    <footer class="bg-white text-black py-6 w-full">
+        <div class="flex justify-center items-center text-center">
+            <p class="text-black">
+                © 2026 Calm Corner · Contact · Reserveren
+            </p>
+        </div>
     </footer>
 </body>
 
