@@ -9,25 +9,22 @@
         <div class="flex justify-center items-center gap-2 mb-6 text-gray-600">
             <p>Nog geen account?</p>
 
-            <a 
+            <a
                 href="index.php?page=register"
-                class="text-red-500 hover:text-red-600 transition"
-            >
+                class="text-red-500 hover:text-red-600 transition">
                 Aanmelden
             </a>
         </div>
 
-        <form 
+        <form
             class="flex flex-col gap-4"
             method="POST"
-            action="php/login.php"
-        >
+            action="php/login.php">
 
             <div class="flex flex-col">
-                <label 
+                <label
                     for="username"
-                    class="mb-2 text-sm font-medium text-gray-700"
-                >
+                    class="mb-2 text-sm font-medium text-gray-700">
                     Gebruikersnaam
                 </label>
 
@@ -35,15 +32,13 @@
                     type="text"
                     id="username"
                     name="username"
-                    class="bg-white border border-gray-300 rounded-lg px-4 py-3 text-black focus:outline-none focus:ring-2 focus:ring-red-400"
-                >
+                    class="bg-white border border-gray-300 rounded-lg px-4 py-3 text-black focus:outline-none focus:ring-2 focus:ring-red-400">
             </div>
 
             <div class="flex flex-col">
-                <label 
+                <label
                     for="password"
-                    class="mb-2 text-sm font-medium text-gray-700"
-                >
+                    class="mb-2 text-sm font-medium text-gray-700">
                     Wachtwoord
                 </label>
 
@@ -51,14 +46,12 @@
                     type="password"
                     id="password"
                     name="password"
-                    class="bg-white border border-gray-300 rounded-lg px-4 py-3 text-black focus:outline-none focus:ring-2 focus:ring-red-400"
-                >
+                    class="bg-white border border-gray-300 rounded-lg px-4 py-3 text-black focus:outline-none focus:ring-2 focus:ring-red-400">
             </div>
 
             <button
                 type="submit"
-                class="bg-red-500 hover:bg-red-600 transition text-white rounded-lg py-3 font-semibold text-lg mt-2"
-            >
+                class="bg-red-500 hover:bg-red-600 transition text-white rounded-lg py-3 font-semibold text-lg mt-2">
                 Inloggen
             </button>
 
@@ -67,8 +60,7 @@
         <div class="text-center mt-6">
             <a
                 class="text-gray-500 hover:text-red-600 transition"
-                href="#"
-            >
+                href="#">
                 Wachtwoord vergeten?
             </a>
         </div>

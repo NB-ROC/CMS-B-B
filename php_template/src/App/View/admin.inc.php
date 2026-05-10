@@ -1,58 +1,59 @@
 <style>
-.admin-layout {
-  display: grid !important;
-  grid-template-columns: 280px 1fr !important;
-  width: 100% !important;
-  min-height: 80vh !important;
-  background: white !important;
-}
+    .admin-layout {
+        display: grid !important;
+        grid-template-columns: 280px 1fr !important;
+        width: 100% !important;
+        min-height: 80vh !important;
+        background: white !important;
+    }
 
-.admin-menu {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 20px !important;
-  border-right: 1px solid #ccc !important;
-  padding: 60px 30px !important;
-}
+    .admin-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        border-right: 1px solid #ccc !important;
+        padding: 60px 30px !important;
+    }
 
-.admin-btn {
-  background: none !important;
-  color: black !important;
-  border: none !important;
-  text-align: left !important;
-  font-size: 22px !important;
-  padding: 5px 0 !important;
-}
+    .admin-btn {
+        background: none !important;
+        color: black !important;
+        border: none !important;
+        text-align: left !important;
+        font-size: 22px !important;
+        padding: 5px 0 !important;
+    }
 
-.admin-btn.active {
-  color: #ff5656 !important;
-  font-weight: bold !important;
-}
+    .admin-btn.active {
+        color: #ff5656 !important;
+        font-weight: bold !important;
+    }
 
-.admin-results {
-  padding: 60px !important;
-}
+    .admin-results {
+        padding: 60px !important;
+    }
 
-.admin-section {
-  display: none !important;
-}
+    .admin-section {
+        display: none !important;
+    }
 
-.admin-section.active {
-  display: block !important;
-}
+    .admin-section.active {
+        display: block !important;
+    }
 
-.admin-menu-bottom {
-  margin-top: auto !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
+    .admin-menu-bottom {
+        margin-top: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
 
-.admin-menu-bottom a {
-  color: black !important;
-  text-decoration: none !important;
-}
+    .admin-menu-bottom a {
+        color: black !important;
+        text-decoration: none !important;
+    }
 </style>
+
 <div class="admin-layout">
 
     <aside class="admin-menu">
@@ -147,16 +148,16 @@
 </div>
 
 <script>
-function showAdminSection(id, btn) {
-    document.querySelectorAll('.admin-section').forEach(section => {
-        section.classList.remove('active');
-    });
+    function showAdminSection(id, btn) {
+        document.querySelectorAll('.admin-section').forEach(section => {
+            section.classList.remove('active');
+        });
 
-    document.querySelectorAll('.admin-btn').forEach(button => {
-        button.classList.remove('active');
-    });
+        document.querySelectorAll('.admin-btn').forEach(button => {
+            button.classList.remove('active');
+        });
 
-    document.getElementById(id).classList.add('active');
-    btn.classList.add('active');
-}
+        document.getElementById(id).classList.add('active');
+        btn.classList.add('active');
+    }
 </script>
