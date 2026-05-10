@@ -1,11 +1,11 @@
 <?php
 namespace App\Statics;
 use PDO, PDOException;
-
+ 
 class DatabaseSingleton
 {
     public static ?PDO $conn = null;
-
+ 
     public static function makeCon() :void
     {
         if (DatabaseSingleton::$conn == false) {
@@ -13,7 +13,7 @@ class DatabaseSingleton
             $username = "root";
             $password = getenv('DB_ROOT_PASSWORD');
             $dbname = getenv('DB_DATABASE');
-
+ 
             try {
                 DatabaseSingleton::$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 DatabaseSingleton::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -22,8 +22,40 @@ class DatabaseSingleton
             }
         }
     }
-
+ 
     public static function closeCon(){
         DatabaseSingleton::$conn = null;
     }
-}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
