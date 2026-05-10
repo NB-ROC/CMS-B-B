@@ -3,18 +3,18 @@ namespace App\Models;
 
 class User
 {
+    public int $userid;
     public string $username;
-    public string $firstname;
+    public int $userinfoid;
     public string $lastname;
     public string $email;
-    public int $role;
+    public int $roleid;
 
 
-    public function __construct(string $username, string $firstname, string $lastname, string $email, int $role = 2) {
+    public function __construct(int $userid, string $username, int $userinfoid, string $lastname, string $email, int $role = 2) {
+        $this->userid = $userid;    
         $this->username = $username;
-        $this->firstname = $firstname;
-        $this->lastname = $lastname;
-        $this->email = $email;
-        $this->role = $role;
+        $this->userinfoid = $userinfoid;
+        $this->roleid = $role;
     }
 }
