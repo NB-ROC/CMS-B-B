@@ -1,0 +1,61 @@
+services:
+  # PHP Application Service
+  app:
+    build: .
+    container_name: bnb_webapp
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    networks:
+      - app_network
+# MySQL Database Service
+  db:
+    image: mysql:8.0
+    container_name: php_db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+    networks:
+      - app_network
+# phpMyAdmin Web Interface
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      PMA_ARBITRARY: ${PMA_ARBITRARY}
+    env_file:
+      - .env
+    networks:
+      - app_network
+# Persistent storage for database
+volumes:
+  mysql_data:
+# Custom network for service communication
+networks:
+  app_network:
+    driver: bridge
