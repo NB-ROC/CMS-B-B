@@ -55,7 +55,6 @@
 </style>
 
 <div class="admin-layout">
-
     <aside class="admin-menu">
         <button class="admin-btn active" onclick="showAdminSection('bookingen', this)">Admin</button>
         <button class="admin-btn" onclick="showAdminSection('contact', this)">Contact berichten</button>
@@ -68,7 +67,6 @@
     </aside>
 
     <main class="admin-results">
-
         <section id="bookingen" class="admin-section active">
             <h1>Alle boekingen</h1>
 

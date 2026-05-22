@@ -20,7 +20,6 @@ Route::register_routes([
     "/reserveringen" => "reserveringen",
     "/users" => [UserController::class, "index"],
     "/users/{user}" => [UserController::class, "show"]
-
 ]);
 
 $request = Route::get_uri();
