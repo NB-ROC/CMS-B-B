@@ -1,56 +1,56 @@
 <style>
     .admin-layout {
-        display: grid !important;
-        grid-template-columns: 280px 1fr !important;
-        width: 100% !important;
-        min-height: 80vh !important;
-        background: white !important;
+        display: grid ;
+        grid-template-columns: 280px 1fr ;
+        width: 100% ;
+        min-height: 80vh ;
+        background: white ;
     }
 
     .admin-menu {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-        border-right: 1px solid #ccc !important;
-        padding: 60px 30px !important;
+        display: flex ;
+        flex-direction: column ;
+        gap: 20px ;
+        border-right: 1px solid #ccc 
+        padding: 60px 30px;
     }
 
     .admin-btn {
-        background: none !important;
-        color: black !important;
-        border: none !important;
-        text-align: left !important;
-        font-size: 22px !important;
-        padding: 5px 0 !important;
+        background: none ;
+        color: black ;
+        border: none ;
+        text-align: left ;
+        font-size: 22px ;
+        padding: 5px 0 ;
     }
 
     .admin-btn.active {
-        color: #ff5656 !important;
-        font-weight: bold !important;
+        color: #ff5656;
+        font-weight: bold ;
     }
 
     .admin-results {
-        padding: 60px !important;
+        padding: 60px ;
     }
 
     .admin-section {
-        display: none !important;
+        display: none ;
     }
 
     .admin-section.active {
-        display: block !important;
+        display: block;
     }
 
     .admin-menu-bottom {
-        margin-top: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 10px !important;
+        margin-top: auto ;
+        display: flex ;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .admin-menu-bottom a {
-        color: black !important;
-        text-decoration: none !important;
+        color: black ;
+        text-decoration: none ;
     }
 </style>
 
