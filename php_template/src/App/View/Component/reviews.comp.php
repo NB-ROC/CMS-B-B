@@ -3,7 +3,6 @@ use App\Controller\GeneralController;
 ?>
 
 <section class="review-section">
-
     <div class="review-container">
 
         <div class="review-info">
