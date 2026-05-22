@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -111,19 +105,6 @@ nav a:hover {
 .contact-form textarea {
   height: 140px;
   resize: none;
-}
-
-button {
-  padding: 14px;
-  background-color: #8a855c;
-  color: white;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3e5f6d;
 }
 
 .head-section {
