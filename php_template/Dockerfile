@@ -1,5 +1,8 @@
-FROM php:8.5-apache
+FROM php:8.5-cli
 
-RUN docker-php-ext-install pdo pdo_mysql mysqli
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git unzip curl libzip-dev zip \
+    && docker-php-ext-install pdo pdo_mysql
 
-COPY ./src /var/www/html
+WORKDIR /var/www 

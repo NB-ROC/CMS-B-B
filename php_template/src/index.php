@@ -2,49 +2,63 @@
 require_once("AutoLoad.php");
 
 use App\Controller\DatabaseController;
-use App\Controller\GeneralController;
+use App\Controller\UserController;
+use App\Statics\Route;
 
 session_start();
-isset($_GET['page']) ? $page = $_GET['page'] : $page = "home";
-
-if (isset($_SESSION["activeuser"])) {
-    var_dump($_SESSION["activeuser"]);
-}
-
 
 $DatabaseController = new DatabaseController();
-$GeneralController = new GeneralController();
 
+Route::register_routes([
+    "/" => "home",
+    "/admin" => "admin",
+    "/contact" => "contact",
+    "/galerij" => "galerij",
+    "/kamers" => "kamers",
+    "/login" => "login",
+    "/register" => "register",
+    "/reserveringen" => "reserveringen",
+    "/users" => [UserController::class, "index"],
+    "/users/{user}" => [UserController::class, "show"]
+]);
+
+$request = Route::get_uri();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?php echo ucfirst($page); ?>
-    </title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/imagelogofavicon.png">
-
-    <!-- Favicon moet hier -->
-    <link rel="icon" type="image/png" sizes="128x128" href="images/imagelogofavicon.png">
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <title><?php echo $request ?></title>
 </head>
 
-<body>
-    <header class="header">
-        <?php include("includes/navbar.inc.php") ?>
+<body class="bg-gray-700 text-white">
+    <header>
+        <?php
+        Route::render_component("navbar", [
+            "pages" => [
+                "home",
+                "kamers",
+                "galerij",
+                "reserveringen",
+                "contact",
+                "register",
+                "login"
+            ]
+        ]);
+        ?>
     </header>
-
-<main>
-    <?php include("includes/$page.inc.php") ?>
-</main>
-
+    <main>
+        <?php
+        Route::render($request);
+        ?>
+    </main>
     <footer>
-        <?php include("includes/review.inc.php") ?>
-        <p>© 2026 Calm Corner · Contact · Reserveren</p>
+
     </footer>
 </body>
 

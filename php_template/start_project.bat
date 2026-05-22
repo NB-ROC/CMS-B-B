@@ -7,6 +7,9 @@ cls
 call docker compose up -d
 pause
 cls
-cd .\install_tool\
-call sql-win.bat
-pause
+cd .\src
+call python -m venv venv
+call Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+call venv\Scripts\activate
+call pip install -r requirements.txt
+call python .\orchestrator.py migration
