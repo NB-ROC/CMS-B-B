@@ -1,403 +1,410 @@
 @import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 /* ================= HEADER ================= */
 
 .header {
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;   /* meer ruimte links/rechts */
-    border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  /* meer ruimte links/rechts */
+  border-bottom: 1px solid #e0e0e0;
 }
 
 /* LOGO */
 
 .logo img {
-    width: 200px;   /* groter logo */
-    height: auto;
-    
+  width: 200px;
+  /* groter logo */
+  height: auto;
 }
 
 /* NAVIGATIE */
 
 nav a {
-    margin-left: 40px;     /* meer ruimte tussen menu items */
-    text-decoration: none;
-    color: #ff5656;
-    font-size: 17px;       /* groter menu */
-    font-weight: 500;
+  margin-left: 40px;
+  /* meer ruimte tussen menu items */
+  text-decoration: none;
+  color: #ff5656;
+  font-size: 17px;
+  /* groter menu */
+  font-weight: 500;
 }
 
 nav a:hover {
-    color: #ec3131;
+  color: #ec3131;
 }
 
 /* ================= CONTACT SECTION ================= */
 
 .contact-section {
-    width: 100%;
-    background-color: #dcdcdc;   /* volledige grijze achtergrond */
-    padding: 80px 0;
+  width: 100%;
+  background-color: #dcdcdc;
+  /* volledige grijze achtergrond */
+  padding: 80px 0;
 }
 
 .contact-container {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: #e6e6e6;
-    padding: 60px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  padding: 60px;
 }
 
 /* LINKERKANT */
 
 .contact-info {
-    width: 40%;
+  width: 40%;
 }
 
 .contact-info h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .contact-info p {
-    margin-bottom: 12px;
-    font-size: 16px;
+  margin-bottom: 12px;
+  font-size: 16px;
 }
 
 /* RECHTERKANT */
 
 .contact-form {
-    width: 50%;
+  width: 50%;
 }
 
 .contact-form h2 {
-    margin-bottom: 25px;
-    font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 24px;
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 14px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    background-color: #f9f9f9;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #f9f9f9;
 }
 
 .contact-form textarea {
-    height: 140px;
-    resize: none;
+  height: 140px;
+  resize: none;
 }
 
 button {
-    padding: 14px;
-    background-color: #8a855c;
-    color: white;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
+  padding: 14px;
+  background-color: #8a855c;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #3e5f6d;
+  background-color: #3e5f6d;
 }
 
-.head-section{
-    width: 100%;
-    height: 90vh;
-    background-image: url(../images/houseStockImage.png);
-    background-size: cover;
-    background-color: lightgray;
-    color: white;
-    padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+.head-section {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../images/houseStockImage.png);
+  background-size: cover;
+  background-color: lightgray;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
-.head-section-header-text{
-    font-size: 60px;
-}
-.head-section-text{
-    font-size: 18px;
+.head-section-header-text {
+  font-size: 60px;
 }
 
-.button-red{
-    background-color: #ff5656;
-    color: white;
-    border-radius: 10px;
-}
-.button-white{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
+.head-section-text {
+  font-size: 18px;
 }
 
-.head-section-button-container{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+.button-red {
+  background-color: #ff5656;
+  color: white;
+  border-radius: 10px;
 }
 
-.faciliteiten-section, .room-section{
-    padding: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    padding-bottom: 100px;
+.button-white {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 
-.faciliteiten-info-container-row{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.head-section-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
-.faciliteiten-info-container-column{
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
+.faciliteiten-section,
+.room-section {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
-.faciliteiten-info-box-container{
-    width: 400px;
-    background-color: white;
-    border-radius: 20px;
-    outline-width: 1px;
-    outline-style: solid;
-    outline-color: #D2B8B8;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    padding-bottom: 50px;
+.faciliteiten-info-container-row {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.faciliteiten-info-box-container > p{
-    color: #D2B8B8;
-    font-size: 20px;
+.faciliteiten-info-container-column {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.faciliteiten-info-box-container > h3{
-    font-weight: 600;
-    font-size: 28px;
+.faciliteiten-info-box-container {
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #d2b8b8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
 }
 
-.faciliteiten-icon{
-    width: 40px;
-    height: fit-content;
+.faciliteiten-info-box-container>p {
+  color: #d2b8b8;
+  font-size: 20px;
 }
 
-.room-image-row-container{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.faciliteiten-info-box-container>h3 {
+  font-weight: 600;
+  font-size: 28px;
 }
 
-.room-image-container{
-    color: white;
-    border-radius: 30px;
-    height: 300px;
-    width: 300px;
-    background-color: #dcdcdc;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 600;
+.faciliteiten-icon {
+  width: 40px;
+  height: fit-content;
 }
 
-.bedroom{
-    background-image: url(../images/bedroom.png);
-    background-size: cover;
+.room-image-row-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.luxe-suite{
-    background-image: url(../images/luxeSuit.png);
-    background-size: cover;
+.room-image-container {
+  color: white;
+  border-radius: 30px;
+  height: 300px;
+  width: 300px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-
-.kitchen{
-    background-image: url(../images/kitchen.png);
-    background-size: cover;
+.bedroom {
+  background-image: url(../images/bedroom.png);
+  background-size: cover;
 }
 
-.resevering-container{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
+.luxe-suite {
+  background-image: url(../images/luxeSuit.png);
+  background-size: cover;
 }
 
-.resevering-container > img{
-    width: 40vw;
-    height: fit-content;
-    border-radius: 5px;
+.kitchen {
+  background-image: url(../images/kitchen.png);
+  background-size: cover;
 }
 
-.resevering-payment-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.resevering-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
 }
 
-.resevering-payment-container > h2{
-    font-size: 64px;
+.resevering-container>img {
+  width: 40vw;
+  height: fit-content;
+  border-radius: 5px;
 }
 
-.resevering-date-container{
-    display: flex;
-    flex-direction: row;
+.resevering-payment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.check-in-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 200px;
-    height: 50px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #B3B3B3;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px;
-    align-items: center;
-}
-.check-out-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    width: 200px;
-    height: 50px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #B3B3B3;
-    border-left: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px;
-    align-items: center;
+.resevering-payment-container>h2 {
+  font-size: 64px;
 }
 
-.resevering-persons-container{
-    width: 400px;
-    height: 50px;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #B3B3B3;
+.resevering-date-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-in-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 200px;
+  height: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b3b3b3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  align-items: center;
+}
+
+.check-out-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 200px;
+  height: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b3b3b3;
+  border-left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  align-items: center;
+}
+
+.resevering-persons-container {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b3b3b3;
 }
 
 /* ================= FOOTER ================= */
 
 .footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color: white;
-    border-top: 1px solid #e0e0e0;
-    font-size: 14px;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
 }
 
 /* ================= LOGIN ================= */
 
 .login-container {
-    height: 610px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  height: 610px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .login-container h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .no-account-container {
-    display: flex;
-    gap: 6px;
-    font-size: 14px;
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
 }
 
 .no-account-container a {
-    color: #333;
-    text-decoration: underline;
+  color: #333;
+  text-decoration: underline;
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 10px;
 }
 
 .login-form label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .login-form input {
-    height: 38px;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
+  height: 38px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
 }
 
 .login-form button {
-    margin-top: 10px;
-    height: 40px;
-    border: none;
-    border-radius: 6px;
-    background-color: #6c6c6c;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6c6c6c;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .login-form button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .forgot-password {
-    font-size: 14px;
-    margin-top: 5px;
-    text-decoration: underline;
-    color: #333;
+  font-size: 14px;
+  margin-top: 5px;
+  text-decoration: underline;
+  color: #333;
 }
 
 /* ================= KAMERS SECTION ================= */
@@ -409,6 +416,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
 h2 {
   font-size: 50px;
   font-family: "Semi-bold", sans-serif;
@@ -417,6 +425,7 @@ h2 {
   font-style: normal;
   color: #ff5656;
 }
+
 .subtitle {
   font-size: 16px;
   font-family: "Extra Light", sans-serif;
@@ -425,6 +434,7 @@ h2 {
   font-style: normal;
   color: #000000af;
 }
+
 .TwinKamerTitle {
   color: #807070;
   font-size: 40px;
@@ -433,6 +443,7 @@ h2 {
   font-weight: 1px;
   margin-left: 50px;
 }
+
 .TwinKamerText {
   color: #807070;
   font-size: 30px;
@@ -441,6 +452,7 @@ h2 {
   font-weight: 1px;
   margin-left: 50px;
 }
+
 .imgTwinKamer {
   margin-top: 100px;
   width: 600px;
@@ -448,15 +460,18 @@ h2 {
   margin-left: 50px;
   margin-bottom: 100px;
 }
+
 .imgTwinKamer2 {
   width: 600px;
   height: 400px;
   margin-bottom: 30px;
   margin-left: 50px;
 }
+
 .imgTwinKamer2.Rechts {
   margin-left: 700px;
 }
+
 .Tweepersoonkamer {
   color: #807070;
   font-size: 30px;
@@ -465,6 +480,7 @@ h2 {
   font-weight: 1px;
   margin-left: 700px;
 }
+
 .TweepersoonkamerTitle {
   color: #807070;
   font-size: 40px;
@@ -474,6 +490,7 @@ h2 {
 
   margin-top: 100px;
 }
+
 .TweepersoonkamerText {
   color: #807070;
   font-size: 30px;
@@ -483,10 +500,12 @@ h2 {
 
   margin-bottom: 60px;
 }
+
 .allimages {
   display: flex;
   flex-direction: column;
 }
+
 .GalerijContainer {
   display: flex;
   flex-direction: column;
@@ -494,6 +513,7 @@ h2 {
   margin-left: 50px;
   height: 200px;
 }
+
 .GalerijTitle {
   color: #ff5656;
   font-size: 30px;
@@ -514,7 +534,8 @@ h2 {
 }
 
 .gallery {
-  column-count: 2; /* 2 coloane ca în exemplu */
+  column-count: 2;
+  /* 2 coloane ca în exemplu */
   column-gap: 10px;
   padding: 20px;
 }
@@ -531,6 +552,7 @@ h2 {
 .gallery img:hover {
   transform: scale(1.02);
 }
+
 @media (min-width: 768px) {
   .gallery {
     column-count: 3;
@@ -543,208 +565,258 @@ h2 {
   }
 }
 
-/* =========================
-   REVIEW SECTION
-========================= */
-
-.review-section {
-    width: 100%;
-    padding: 70px 20px;
-    background: #eeeeee;
-    box-sizing: border-box;
+/* ================= RESERVERING SECTION ================= */
+.reservering-description {
+  transform: scaleX(-1);
+  width: 125%;
+  overflow-y: scroll;
+  height: 180px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
-.review-container {
-    max-width: 1150px;
-    margin: 0 auto;
-    background: #ffffff;
-    display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 40px;
-    padding: 45px;
-    box-sizing: border-box;
-    align-items: start;
+.reservering-description>p {
+  transform: scaleX(-1);
 }
 
-/* =========================
-   LEFT SIDE
-========================= */
-
-.review-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.reservering-column-container {
+  margin: 20px auto;
+  width: 85%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px 35px 20px 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.review-logo {
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 25px;
+.reservering-column-container>img {
+  width: 100%;
+  aspect-ratio: 4/1;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.review-info h2 {
-    font-size: 36px;
-    line-height: 1.1;
-    color: #111111;
-    margin: 0 0 15px 0;
+.reservering-row-container {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.review-score {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
+.reservering-info-column-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 47%;
 }
 
-.review-score strong {
-    font-size: 22px;
-    color: #111111;
+.reservering-extra-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  color: #6c6c6c;
 }
 
-.review-score span {
-    color: #f4c400;
-    font-size: 24px;
-    letter-spacing: 2px;
+.reservering-booking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 15px;
+  border-radius: 15px;
 }
 
-.review-info p {
-    font-size: 16px;
-    color: #555555;
-    line-height: 1.6;
-    margin: 0;
+.reservering-date-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
 }
 
-/* =========================
-   FORM
-========================= */
-
-.review-form {
-    background: #f7f7f7;
-    padding: 35px;
-    border-radius: 8px;
+.reservering-date-input:focus {
+  outline: none;
 }
 
-.review-form h2 {
-    font-size: 30px;
-    color: #c40000;
-    margin: 0 0 25px 0;
+.reservering-input-check-in-date {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 5px 15px;
+  border-width: 1px;
+  border-color: #6c6c6c;
+  border-style: solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.review-form form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.reservering-input-check-out-date {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 5px 15px;
+  border-width: 1px;
+  border-color: #6c6c6c;
+  border-style: solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 0;
 }
 
-.review-form label {
-    display: block;
-    font-size: 15px;
-    color: #111111;
-    font-weight: 600;
-    margin-bottom: 7px;
+.reservering-date-text {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.review-form input[type="text"],
-.review-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 14px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #d5d5d5;
-    background: #ffffff;
-    color: #333333;
-    font-size: 15px;
-    border-radius: 4px;
-    transition: 0.3s ease;
+.total-persons-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  border-width: 1px;
+  border-color: #6c6c6c;
+  border-style: solid;
+  border-radius: 15px;
 }
 
-.review-form input[type="text"]:focus,
-.review-form textarea:focus {
-    outline: none;
-    border-color: #8f8a5f;
+.total-persons-container>p {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.review-form textarea {
-    min-height: 140px;
-    resize: vertical;
+.total-persons-container>input:focus {
+  outline: none;
 }
 
-/* =========================
-   STARS
-========================= */
-
-.review-stars {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+.booking-button {
+  background-color: #ff5656;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 1.5rem;
 }
 
-.review-stars label {
-    font-size: 34px;
-    color: #f4c400;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.booking-button:hover {
+  background-color: #ec4949;
 }
 
-.review-stars input {
-    margin: 0;
+/* ================= Upload files SECTION ================= */
+.upload-files-main-section {
+  height: 100vh;
+  padding: 20px 100px;
+  box-sizing: border-box;
 }
 
-/* =========================
-   BUTTON
-========================= */
-
-.review-form button {
-    width: 100%;
-    padding: 15px 20px;
-    background: #8f8a5f;
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s ease;
+.upload-file-styling {
+  border-radius: 15px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px 15px;
+  width: fit-content;
 }
 
-.review-form button:hover {
-    background: #756f4d;
-    transform: translateY(-2px);
+/* ================= ADMIN SECTION ================= */
+/* ================= ADMIN SECTION ================= */
+
+.admin-layout {
+  width: 100%;
+  min-height: calc(100vh - 160px);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background: #ffffff;
 }
 
-/* =========================
-   MOBILE
-========================= */
+.admin-menu {
+  border-right: 1px solid #d0d0d0;
+  padding: 80px 35px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-@media screen and (max-width: 768px) {
+.admin-btn {
+  background: transparent;
+  color: #111;
+  border: none;
+  padding: 0;
+  text-align: left;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-    .review-container {
-        grid-template-columns: 1fr;
-        padding: 30px 20px;
-    }
+.admin-btn:hover,
+.admin-btn.active {
+  background: transparent;
+  color: #ff5656;
+  font-weight: bold;
+}
 
-    .review-info {
-        text-align: center;
-    }
+.admin-menu-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-    .review-logo {
-        margin: 0 auto 25px auto;
-    }
+.admin-menu-bottom a {
+  color: #111;
+  text-decoration: none;
+  font-size: 22px;
+}
 
-    .review-info h2 {
-        font-size: 28px;
-    }
+.admin-results {
+  padding: 70px;
+  background: #ffffff;
+}
 
-    .review-form h2 {
-        font-size: 24px;
-    }
+.admin-section {
+  display: none;
+}
 
-    .review-stars {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+.admin-section.active {
+  display: block;
+}
 
+.admin-section h1 {
+  color: #111;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.admin-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.admin-section th,
+.admin-section td {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: #111;
+}
+
+.edit-card {
+  max-width: 650px;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-card textarea {
+  width: 100%;
+  height: 130px;
+  padding: 12px;
+}
+
+.save-btn,
+.delete-btn {
+  width: fit-content;
+  padding: 12px 20px;
 }
