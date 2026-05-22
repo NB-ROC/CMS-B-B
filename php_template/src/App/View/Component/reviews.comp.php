@@ -1,5 +1,5 @@
 <?php
-use App\Controller\GeneralController;
+use App\Statics\Route;
 ?>
 
 <section class="review-section">
@@ -27,7 +27,7 @@ use App\Controller\GeneralController;
             <h2>Review plaatsen</h2>
 
             <?php
-            echo ("<form method='POST' action='" . GeneralController::linkToAction('review') . "'>");
+            echo ("<form method='POST' action='" . Route::linkToAction('review') . "'>");
             ?>
 
             <label for="name">Uw naam</label>
