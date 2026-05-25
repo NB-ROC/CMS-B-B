@@ -12,36 +12,35 @@ body {
 }
 
 /* ================= HEADER ================= */
-
 .header {
   width: 100%;
   height: 100px;
   background-color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 120px;
-  /* meer ruimte links/rechts */
   border-bottom: 1px solid #e0e0e0;
 }
 
 /* LOGO */
-
 .logo img {
-  width: 200px;
-  /* groter logo */
-  height: auto;
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
 }
 
-/* NAVIGATIE */
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* spațiu între logo și meniu */
+  gap: 40px; /* spațiu între linkuri */
+}
 
 nav a {
-  margin-left: 40px;
-  /* meer ruimte tussen menu items */
   text-decoration: none;
   color: #ff5656;
   font-size: 17px;
-  /* groter menu */
   font-weight: 500;
 }
 
@@ -206,12 +205,12 @@ button:hover {
   padding-bottom: 50px;
 }
 
-.faciliteiten-info-box-container>p {
+.faciliteiten-info-box-container > p {
   color: #d2b8b8;
   font-size: 20px;
 }
 
-.faciliteiten-info-box-container>h3 {
+.faciliteiten-info-box-container > h3 {
   font-weight: 600;
   font-size: 28px;
 }
@@ -264,7 +263,7 @@ button:hover {
   gap: 2vw;
 }
 
-.resevering-container>img {
+.resevering-container > img {
   width: 40vw;
   height: fit-content;
   border-radius: 5px;
@@ -276,7 +275,7 @@ button:hover {
   gap: 10px;
 }
 
-.resevering-payment-container>h2 {
+.resevering-payment-container > h2 {
   font-size: 64px;
 }
 
@@ -575,7 +574,7 @@ h2 {
   box-sizing: border-box;
 }
 
-.reservering-description>p {
+.reservering-description > p {
   transform: scaleX(-1);
 }
 
@@ -591,7 +590,7 @@ h2 {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.reservering-column-container>img {
+.reservering-column-container > img {
   width: 100%;
   aspect-ratio: 4/1;
   object-fit: cover;
@@ -679,12 +678,12 @@ h2 {
   border-radius: 15px;
 }
 
-.total-persons-container>p {
+.total-persons-container > p {
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-.total-persons-container>input:focus {
+.total-persons-container > input:focus {
   outline: none;
 }
 
