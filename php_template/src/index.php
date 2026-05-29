@@ -57,8 +57,10 @@ $request = Route::get_uri();
         Route::render($request);
         ?>
     </main>
-    <footer>
-
+        <footer>
+        <?php
+            Route::render_component("reviews", []);
+        ?>
     </footer>
 </body>
 
