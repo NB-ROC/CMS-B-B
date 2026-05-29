@@ -558,66 +558,59 @@
     }
   }
   /* ================= ADMIN SECTION ================= */
+  /* ================= ADMIN SECTION ================= */
   .admin-layout {
-    @apply w-full min-h-[calc(100vh-160px)] grid grid-cols-[300px_1fr] bg-white;
+    @apply w-full min-h-[calc(100vh_-_160px)] grid grid-cols-[300px_1fr];
+    background: #ffffff;
   }
-
   .admin-menu {
-    @apply border-r border-[#d0d0d0] pt-[80px] px-[35px] pb-[40px] flex flex-col gap-[20px];
+    @apply flex flex-col gap-5 pt-20 pb-10 px-[35px] border-r-[#d0d0d0] border-r border-solid;
   }
-
   .admin-btn {
-    @apply bg-transparent text-[#111] border-0 p-0 text-left text-[24px] cursor-pointer;
+    @apply text-[#111] text-left text-2xl cursor-pointer p-0 border-[none];
+    background: transparent;
   }
-
   .admin-btn:hover,
   .admin-btn.active {
-    @apply bg-transparent text-[#ff5656] font-bold;
+    @apply text-[#ff5656] font-[bold];
+    background: transparent;
   }
-
   .admin-menu-bottom {
-    @apply mt-auto flex flex-col gap-[12px];
+    @apply flex flex-col gap-3 mt-auto;
   }
-
   .admin-menu-bottom a {
     @apply text-[#111] no-underline text-[22px];
   }
-
   .admin-results {
-    @apply p-[70px] bg-white;
+    @apply p-[70px];
+    background: #ffffff;
   }
-
   .admin-section {
     @apply hidden;
   }
-
   .admin-section.active {
     @apply block;
   }
-
   .admin-section h1 {
     @apply text-[#111] text-[38px] mb-[35px];
   }
-
   .admin-section table {
-    @apply w-full border-collapse bg-white;
+    @apply w-full border-collapse;
+    background: white;
   }
-
   .admin-section th,
   .admin-section td {
-    @apply p-[16px] border-b border-[#ddd] text-left text-[#111];
+    @apply text-left text-[#111] p-4 border-b-[#ddd] border-b border-solid;
   }
-
   .edit-card {
-    @apply max-w-[650px] bg-[#f5f5f5] p-[30px] rounded-[16px] flex flex-col gap-[15px];
+    @apply max-w-[650px] flex flex-col gap-[15px] p-[30px] rounded-2xl;
+    background: #f5f5f5;
   }
-
   .edit-card textarea {
-    @apply w-full h-[130px] p-[12px];
+    @apply w-full h-[130px] p-3;
   }
-
   .save-btn,
   .delete-btn {
-    @apply w-fit py-[12px] px-[20px];
+    @apply w-fit px-5 py-3;
   }
 }
