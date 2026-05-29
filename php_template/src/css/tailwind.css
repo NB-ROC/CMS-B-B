@@ -19,7 +19,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
-    --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -189,6 +188,9 @@
   .static {
     position: static;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -198,8 +200,17 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-\[18px\] {
+    margin-bottom: 18px;
+  }
+  .mb-\[25px\] {
+    margin-bottom: 25px;
   }
   .block {
     display: block;
@@ -213,8 +224,20 @@
   .table {
     display: table;
   }
+  .h-\[140px\] {
+    height: 140px;
+  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
   }
   .w-full {
     width: 100%;
@@ -222,11 +245,17 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -247,8 +276,27 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
+  .border-\[\#ccc\] {
+    border-color: #ccc;
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .bg-\[\#8a855c\] {
+    background-color: #8a855c;
+  }
+  .bg-\[\#dcdcdc\] {
+    background-color: #dcdcdc;
+  }
+  .bg-\[\#e6e6e6\] {
+    background-color: #e6e6e6;
+  }
+  .bg-\[\#f9f9f9\] {
+    background-color: #f9f9f9;
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -265,11 +313,20 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .p-\[14px\] {
+    padding: 14px;
+  }
+  .p-\[60px\] {
+    padding: 60px;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
@@ -285,6 +342,18 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -324,6 +393,13 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .hover\:bg-\[\#3e5f6d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #3e5f6d;
+      }
+    }
   }
   .hover\:bg-red-600 {
     &:hover {
