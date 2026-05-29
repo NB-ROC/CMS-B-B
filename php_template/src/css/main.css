@@ -17,6 +17,10 @@ body {
   height: 100px;
   background-color: white;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  /* meer ruimte links/rechts */
   align-items: center;
   padding: 0 120px;
   border-bottom: 1px solid #e0e0e0;
@@ -24,6 +28,9 @@ body {
 
 /* LOGO */
 .logo img {
+  width: 200px;
+  /* groter logo */
+  height: auto;
   width: 150px;
   height: 100px;
   object-fit: contain;
@@ -38,6 +45,12 @@ nav {
 }
 
 nav a {
+  margin-left: 40px;
+  /* meer ruimte tussen menu items */
+  text-decoration: none;
+  color: #ff5656;
+  font-size: 17px;
+  /* groter menu */
   text-decoration: none;
   color: #ff5656;
   font-size: 17px;
@@ -110,6 +123,133 @@ nav a:hover {
 .contact-form textarea {
   height: 140px;
   resize: none;
+}
+
+.head-section {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../images/houseStockImage.png);
+  background-size: cover;
+  background-color: lightgray;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.head-section-header-text {
+  font-size: 60px;
+}
+
+.head-section-text {
+  font-size: 18px;
+}
+
+.button-red {
+  background-color: #ff5656;
+  color: white;
+  border-radius: 10px;
+}
+
+.button-white {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.head-section-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.faciliteiten-section,
+.room-section {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.faciliteiten-info-container-row {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faciliteiten-info-container-column {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faciliteiten-info-box-container {
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #d2b8b8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+.faciliteiten-info-box-container>p {
+  color: #d2b8b8;
+  font-size: 20px;
+}
+
+.faciliteiten-info-box-container>h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.faciliteiten-icon {
+  width: 40px;
+  height: fit-content;
+}
+
+.room-image-row-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room-image-container {
+  color: white;
+  border-radius: 30px;
+  height: 300px;
+  width: 300px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bedroom {
+  background-image: url(../images/bedroom.png);
+  background-size: cover;
+}
+
+.luxe-suite {
+  background-image: url(../images/luxeSuit.png);
+  background-size: cover;
 }
 
 button {
@@ -652,6 +792,98 @@ h2 {
 }
 
 .reservering-input-check-out-date {
+}
+
+.reservering-booking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.reservering-date-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.reservering-date-input:focus {
+  outline: none;
+}
+
+.reservering-input-check-in-date {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 5px 15px;
+  border-width: 1px;
+  border-color: #6c6c6c;
+  border-style: solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 0;
+}
+
+.reservering-date-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.total-persons-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  border-width: 1px;
+  border-color: #6c6c6c;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+.total-persons-container>p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.total-persons-container>input:focus {
+  outline: none;
+}
+
+.booking-button {
+  background-color: #ff5656;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.booking-button:hover {
+  background-color: #ec4949;
+}
+
+/* ================= Upload files SECTION ================= */
+.upload-files-main-section {
+  height: 100vh;
+  padding: 20px 100px;
+  box-sizing: border-box;
+}
+
+.upload-file-styling {
+  border-radius: 15px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px 15px;
+  width: fit-content;
+}
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.reservering-input-check-out-date {
   display: flex;
   flex-direction: column;
   padding: 5px 5px 5px 15px;
@@ -819,3 +1051,4 @@ h2 {
   width: fit-content;
   padding: 12px 20px;
 }
+
