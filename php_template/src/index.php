@@ -19,7 +19,9 @@ Route::register_routes([
     "/register" => "register",
     "/reserveringen" => "reserveringen",
     "/users" => [UserController::class, "index"],
-    "/users/{user}" => [UserController::class, "show"]
+    "/users/{user}" => [UserController::class, "show"],
+    "/uploadFile" => "uploadFile"
+
 ]);
 
 $request = Route::get_uri();
@@ -47,7 +49,8 @@ $request = Route::get_uri();
                 "reserveringen",
                 "contact",
                 "register",
-                "login"
+                "login",
+                "uploadFile"
             ]
         ]);
         ?>
@@ -57,8 +60,10 @@ $request = Route::get_uri();
         Route::render($request);
         ?>
     </main>
-    <footer>
-
+        <footer>
+        <?php
+            Route::render_component("reviews", []);
+        ?>
     </footer>
 </body>
 
