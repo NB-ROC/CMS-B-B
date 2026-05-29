@@ -1,5 +1,3 @@
-
-
 <div class="admin-layout">
     <aside class="admin-menu">
         <button class="admin-btn active" onclick="showAdminSection('bookingen', this)">Admin</button>
