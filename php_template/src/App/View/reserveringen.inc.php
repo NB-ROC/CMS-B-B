@@ -8,7 +8,7 @@
 ?>
 
 <!-- Main -->
-<div class="reservering-column-container h-">
+<div class="reservering-column-container">
     <!-- Room name -->
     <h2>Lorum ipsum</h2>
     
