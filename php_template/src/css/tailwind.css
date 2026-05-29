@@ -230,6 +230,9 @@
   .h-\[180px\] {
     height: 180px;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -239,8 +242,14 @@
   .w-\[85\%\] {
     width: 85%;
   }
+  .w-\[95\%\] {
+    width: 95%;
+  }
   .w-\[125\%\] {
     width: 125%;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -319,6 +328,9 @@
   .border-\[\#6c6c6c\] {
     border-color: #6c6c6c;
   }
+  .border-black {
+    border-color: var(--color-black);
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -358,8 +370,14 @@
   .px-\[35px\] {
     padding-inline: 35px;
   }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-\[5px\] {
     padding-block: 5px;
