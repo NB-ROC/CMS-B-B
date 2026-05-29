@@ -1,30 +1,35 @@
-<section class="contact-section">
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>NEEM CONTACT OP</h2>
-            <p><strong>Telefoon:</strong> +31 6 12345678</p>
-            <p><strong>Email:</strong> info@calmcorner.nl</p>
-            <p><strong>Adres:</strong> Straatnaam 1, Nijmegen</p>
+<section class="w-full bg-[#dcdcdc] py-20">
+    <div class="w-[70%] mx-auto flex justify-between bg-[#e6e6e6] p-[60px]">
+        <div class="w-[40%]">
+            <h2 class = 'text-[32px] mb-[25px]'>NEEM CONTACT OP</h2>
+            <p class = 'text-[16px] mb-3'><strong>Telefoon:</strong> +31 6 12345678</p>
+            <p class = 'text-[16px] mb-3'><strong>Email:</strong> info@calmcorner.nl</p>
+            <p class = 'text-[16px] mb-3'><strong>Adres:</strong> Straatnaam 1, Nijmegen</p>
         </div>
 
-        <div class="contact-form">
-            <h2>Laten we contact maken</h2>
+        <div class="w-[50%]">
+            <h2 class = 'mb-[25px] text-[24px]'>Laten we contact maken</h2>
 
-            <form method="POST" action="php/contact.php">
+            <form class = 'flex flex-col' method="POST" action="php/contact.php">
 
                 <label for="name">Uw naam</label>
-                <input type="text" id="name" name="name" placeholder="Uw naam" required>
+                <input class = 'p-[14px] mb-[18px] border border-[#ccc] text-[15px] bg-[#f9f9f9]'
+                    type="text" id="name" name="name" placeholder="Uw naam" required>
 
                 <label for="email">E-mailadres</label>
-                <input type="email" id="email" name="email" placeholder="E-mailadres" required>
+                <input class = 'p-[14px] mb-[18px] border border-[#ccc] text-[15px] bg-[#f9f9f9]'
+                    type="email" id="email" name="email" placeholder="E-mailadres" required>
 
                 <label for="phone">Telefoonnummer</label>
-                <input type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
+                <input class = 'p-[14px] mb-[18px] border border-[#ccc] text-[15px] bg-[#f9f9f9]'
+                    type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
 
                 <label for="message">Uw bericht</label>
-                <textarea id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
+                <textarea class = 'p-[14px] mb-[18px] border border-[#ccc] text-[15px] bg-[#f9f9f9] h-[140px] resize-none0'
+                    id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
 
-                <button type="submit">Bericht verzenden</button>
+                <button class = 'p-[14px] bg-[#8a855c] text-white border-none text-[15px] cursor-pointer hover:bg-[#3e5f6d]'
+                     type="submit">Bericht verzenden</button>
 
             </form>
         </div>
