@@ -48,7 +48,7 @@
         <!-- Booking section -->
         <div class="flex flex-col gap-[10px] rounded-[15px] bg-white p-[15px] shadow-md">
 
-            <form id="bookingFrom" class="flex flex-col gap-4 text-1000">
+            <form id="bookingFrom" class="flex flex-col gap-4 text-1000 text-black">
 
                 <!-- Checkin / Checkout -->
                 <div class="flex flex-row gap-0">
