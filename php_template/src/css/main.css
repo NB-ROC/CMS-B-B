@@ -719,7 +719,6 @@ h2 {
 /* ADMIN SECTION */
 
 .admin-layout {
-  width: 100%;
   display: grid;
   grid-template-columns: 300px auto;
   background: white;

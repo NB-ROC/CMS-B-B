@@ -2,18 +2,14 @@
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
-  :root,
-  :host {
-    --font-sans:
-      ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono:
-      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -26,7 +22,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
-    --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -49,31 +44,17 @@
   }
 }
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html,
-  :host {
+  html, :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(
-      --default-font-family,
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
-    );
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -87,12 +68,7 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -101,37 +77,19 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b,
-  strong {
+  b, strong {
     font-weight: bolder;
   }
-  code,
-  kbd,
-  samp,
-  pre {
-    font-family: var(
-      --default-mono-font-family,
-      ui-monospace,
-      SFMono-Regular,
-      Menlo,
-      Monaco,
-      Consolas,
-      "Liberation Mono",
-      "Courier New",
-      monospace
-    );
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
     font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(
-      --default-mono-font-variation-settings,
-      normal
-    );
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub,
-  sup {
+  sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -157,33 +115,18 @@
   summary {
     display: list-item;
   }
-  ol,
-  ul,
-  menu {
+  ol, ul, menu {
     list-style: none;
   }
-  img,
-  svg,
-  video,
-  canvas,
-  audio,
-  iframe,
-  embed,
-  object {
+  img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
     vertical-align: middle;
   }
-  img,
-  video {
+  img, video {
     max-width: 100%;
     height: auto;
   }
-  button,
-  input,
-  select,
-  optgroup,
-  textarea,
-  ::file-selector-button {
+  button, input, select, optgroup, textarea, ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -205,8 +148,7 @@
   ::placeholder {
     opacity: 1;
   }
-  @supports (not (-webkit-appearance: -apple-pay-button)) or
-    (contain-intrinsic-size: 1px) {
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
     ::placeholder {
       color: currentcolor;
       @supports (color: color-mix(in lab, red, red)) {
@@ -230,15 +172,7 @@
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit,
-  ::-webkit-datetime-edit-year-field,
-  ::-webkit-datetime-edit-month-field,
-  ::-webkit-datetime-edit-day-field,
-  ::-webkit-datetime-edit-hour-field,
-  ::-webkit-datetime-edit-minute-field,
-  ::-webkit-datetime-edit-second-field,
-  ::-webkit-datetime-edit-millisecond-field,
-  ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   ::-webkit-calendar-picker-indicator {
@@ -247,13 +181,10 @@
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button,
-  input:where([type="button"], [type="reset"], [type="submit"]),
-  ::file-selector-button {
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button,
-  ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -273,11 +204,8 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
+  .mt-auto {
+    margin-top: auto;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -303,9 +231,6 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -317,6 +242,12 @@
   }
   .table {
     display: table;
+  }
+  .h-\[130px\] {
+    height: 130px;
+  }
+  .min-h-\[calc\(100vh-160px\)\] {
+    min-height: calc(100vh - 160px);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -333,6 +264,9 @@
   .w-\[300px\] {
     width: 300px;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -341,6 +275,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .grid-cols-\[300px_1fr\] {
+    grid-template-columns: 300px 1fr;
   }
   .flex-col {
     flex-direction: column;
@@ -360,6 +297,12 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-\[12px\] {
+    gap: 12px;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -370,15 +313,23 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-gray-300 {
-    border-color: var(--color-gray-300);
-  }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
-  }
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-\[\#d0d0d0\] {
+    border-color: #d0d0d0;
+  }
+  .border-\[\#ddd\] {
+    border-color: #ddd;
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
@@ -401,20 +352,17 @@
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
+  .bg-transparent {
+    background-color: transparent;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .text-center {
-    text-align: center;
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -422,14 +370,29 @@
   .p-\[10px\] {
     padding: 10px;
   }
+  .p-\[12px\] {
+    padding: 12px;
+  }
+  .p-\[16px\] {
+    padding: 16px;
+  }
   .p-\[30px\] {
     padding: 30px;
+  }
+  .p-\[70px\] {
+    padding: 70px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-\[20px\] {
+    padding-inline: 20px;
+  }
   .px-\[30px\] {
     padding-inline: 30px;
+  }
+  .px-\[35px\] {
+    padding-inline: 35px;
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -437,8 +400,17 @@
   .py-\[12px\] {
     padding-block: 12px;
   }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pb-\[40px\] {
+    padding-bottom: 40px;
+  }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -481,8 +453,14 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#111\] {
+    color: #111;
+  }
   .text-\[\#c40000\] {
     color: #c40000;
+  }
+  .text-\[\#ff5656\] {
+    color: #ff5656;
   }
   .text-black {
     color: var(--color-black);
@@ -501,45 +479,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .shadow-lg {
-    --tw-shadow:
-      0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)),
-      0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow:
-      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
-      var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .transition {
-    transition-property:
-      color,
-      background-color,
-      border-color,
-      outline-color,
-      text-decoration-color,
-      fill,
-      stroke,
-      --tw-gradient-from,
-      --tw-gradient-via,
-      --tw-gradient-to,
-      opacity,
-      box-shadow,
-      transform,
-      translate,
-      scale,
-      rotate,
-      filter,
-      -webkit-backdrop-filter,
-      backdrop-filter,
-      display,
-      content-visibility,
-      overlay,
-      pointer-events;
-    transition-timing-function: var(
-      --tw-ease,
-      var(--default-transition-timing-function)
-    );
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .text-yellow-500 {
     color: var(--color-yellow-500);
@@ -576,12 +515,6 @@
   }
   .focus\:ring-2 {
     &:focus {
-      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
-        calc(2px + var(--tw-ring-offset-width))
-        var(--tw-ring-color, currentcolor);
-      box-shadow:
-        var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
-        var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
@@ -673,12 +606,6 @@
   initial-value: 0 0 #0000;
 }
 @layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
-    ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
-    *,
-    ::before,
-    ::after,
-    ::backdrop {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
@@ -699,67 +626,4 @@
       --tw-ring-offset-shadow: 0 0 #0000;
     }
   }
-  <div class="w-full grid grid-cols-[300px_auto] bg-white">
-
-  <div class="pt-[80px] px-[35px] pb-[40px] border-r border-[#d0d0d0]">
-
-    <button class="block mb-5 bg-transparent border-0 text-[24px] text-[#111] cursor-pointer hover:text-[#ff5656] hover:font-bold">
-      Admin
-    </button>
-
-    <button class="block mb-5 bg-transparent border-0 text-[24px] text-[#111] cursor-pointer hover:text-[#ff5656] hover:font-bold">
-      Contact berichten
-    </button>
-
-    <button class="block mb-5 bg-transparent border-0 text-[24px] text-[#111] cursor-pointer hover:text-[#ff5656] hover:font-bold">
-      Website opstellen
-    </button>
-
-    <div class="mt-[250px]">
-      <a href="#" class="block mb-3 text-[#111] no-underline text-[22px]">
-        Home
-      </a>
-
-      <a href="#" class="block mb-3 text-[#111] no-underline text-[22px]">
-        Log out
-      </a>
-    </div>
-
-  </div>
-
-  <div class="p-[70px] bg-white">
-
-    <section class="block">
-      <h1 class="text-[38px] text-[#111] mb-[35px]">
-        Alle boekingen
-      </h1>
-
-      <table class="w-full border-collapse">
-        <thead>
-          <tr>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Boeking ID</th>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Datum</th>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Reis</th>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Klant</th>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Bedrag</th>
-            <th class="p-4 border-b border-[#ddd] text-left text-[#111]">Status</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">#10956</td>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">17-06-2026</td>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">Stedenreis Parijs</td>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">Sarah Janssen</td>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">€ 850</td>
-            <td class="p-4 border-b border-[#ddd] text-left text-[#111]">Nieuw</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-  </div>
-
-</div>
 }

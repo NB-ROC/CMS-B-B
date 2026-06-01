@@ -1,17 +1,17 @@
-<div class="admin-layout">
-    <aside class="admin-menu">
-        <button class="admin-btn active" onclick="showAdminSection('bookingen', this)">Admin</button>
-        <button class="admin-btn" onclick="showAdminSection('contact', this)">Contact berichten</button>
-        <button class="admin-btn" onclick="showAdminSection('website', this)">Website opstellen</button>
+<div class="w-full min-h-[calc(100vh-160px)] grid grid-cols-[300px_1fr]">
+    <aside class="border-r border-[#d0d0d0] pt-[80px] px-[35px] pb-[40px] flex flex-col gap-[20px]">
+        <button class="bg-transparent text-[#ff5656] font-bold" onclick="showAdminSection('bookingen', this)">Admin</button>
+        <button class="bg-transparent text-[#111] border-0 p-0 text-left text-[24px] cursor-pointer" onclick="showAdminSection('contact', this)">Contact berichten</button>
+        <button class="bg-transparent text-[#111] border-0 p-0 text-left text-[24px] cursor-pointer" onclick="showAdminSection('website', this)">Website opstellen</button>
 
-        <div class="admin-menu-bottom">
-            <a href="index.php">Home</a>
+        <div class="mt-auto flex flex-col gap-[12px]">
+            <a href="http://localhost:8000/">Home</a>
             <a href="logout.php">Log out</a>
         </div>
     </aside>
 
-    <main class="admin-results">
-        <section id="bookingen" class="admin-section active">
+    <main class="p-[70px] bg-white">
+        <section id="bookingen" class="block;">
             <h1>Alle boekingen</h1>
 
             <table>
@@ -46,7 +46,7 @@
             </table>
         </section>
 
-        <section id="contact" class="admin-section">
+        <section id="contact" class="hidden;">
             <h1>Contact berichten</h1>
 
             <table>
@@ -65,16 +65,16 @@
                         <td>anna@mail.com</td>
                         <td>Vraag over Bali</td>
                         <td>Is deze reis nog beschikbaar?</td>
-                        <td><button class="delete-btn">Verwijderen</button></td>
+                        <td><button class="w-fit py-[12px] px-[20px]">Verwijderen</button></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="website" class="admin-section">
+        <section id="website" class=" p-[16px] border-b border-[#ddd] text-left text-[#111]">
             <h1>Website opstellen</h1>
 
-            <div class="edit-card">
+            <div class="w-full h-[130px] p-[12px]">
                 <h3>Home pagina</h3>
                 <label>Tekst</label>
                 <textarea>Welkom op onze website</textarea>
@@ -82,7 +82,7 @@
                 <label>Afbeelding</label>
                 <input type="file">
 
-                <button class="save-btn">Opslaan</button>
+                <button class="w-fit py-[12px] px-[20px]">Opslaan</button>
             </div>
         </section>
 
@@ -91,11 +91,11 @@
 
 <script>
     function showAdminSection(id, btn) {
-        document.querySelectorAll('.admin-section').forEach(section => {
+        document.querySelectorAll('p-[16px] border-b border-[#ddd] text-left text-[#111]').forEach(section => {
             section.classList.remove('active');
         });
 
-        document.querySelectorAll('.admin-btn').forEach(button => {
+        document.querySelectorAll('bg-transparent text-[#111] border-0 p-0 text-left text-[24px] cursor-pointer').forEach(button => {
             button.classList.remove('active');
         });
 
