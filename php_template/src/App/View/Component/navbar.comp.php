@@ -3,7 +3,6 @@ use App\Statics\Route;
 ?>
 
 <header >
-
     <div class="logo">
         <img src="/images/imagegroot.png" alt="Calm Corner hotel">
     </div>
@@ -15,5 +14,4 @@ use App\Statics\Route;
             }
         ?>
     </nav>
-
 </header>
