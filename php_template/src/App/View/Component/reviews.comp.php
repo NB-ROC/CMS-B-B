@@ -23,60 +23,74 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<section class="review-section">
-    <div class="review-container">
+<section class="bg-gray-200 p-10">
+    <div class="bg-white w-[80%] mx-auto p-[30px] flex gap-10">
 
-        <div class="review-info">
+        <!-- LEFT SIDE -->
+        <div class="w-1/2">
 
-            <img src="/images/imagelogofavicon.png" alt="Calm Corner" class="review-logo">
+            <img src="/images/imagelogofavicon.png"
+                 alt="Calm Corner"
+                 class="w-[250px] mb-5">
 
-            <h2>Recensies</h2>
+            <h2 class="text-[30px] text-[#c40000] mb-4">
+                Recensies
+            </h2>
 
-            <div class="review-score">
-                <strong>4.5</strong>
-                <span>★★★★★</span>
+            <div class="mb-4">
+                <strong class="text-2xl">4.5</strong>
+                <span class="text-yellow-500 text-xl ml-2">★★★★★</span>
             </div>
 
-            <p>
+            <p class="text-gray-700">
                 Laat weten hoe u uw verblijf heeft ervaren.
             </p>
 
         </div>
 
-        <div class="review-form">
+        <!-- RIGHT SIDE (FORM) -->
+        <div class="w-1/2">
 
-            <h2>Review plaatsen</h2>
+            <h2 class="text-[24px] mb-[25px]">
+                Review plaatsen
+            </h2>
 
-            <?php
-            echo ("<form method='POST' action='" . Route::linkToAction('review') . "'>");
-            ?>
+            <form method="POST"
+                  action="<?= Route::linkToAction('review') ?>"
+                  class="flex flex-col">
 
-            <label for="name">Uw naam</label>
+                <label class="mb-1">Uw naam</label>
+                <input type="text"
+                       name="name"
+                       placeholder="Uw naam"
+                       required
+                       class="w-[300px] p-[10px] mb-[18px] border border-gray-300 bg-gray-50 text-[15px]">
 
-            <input type="text" id="name" name="name" placeholder="Uw naam" required>
+                <label class="mb-1">Uw bericht</label>
+                <textarea name="message"
+                          rows="6"
+                          placeholder="Uw bericht"
+                          required
+                          class="w-[300px] p-[10px] mb-[18px] border border-gray-300 bg-gray-50 text-[15px]"></textarea>
 
-            <label for="message">Uw bericht</label>
+                <label class="mb-2">Beoordeling</label>
 
-            <textarea id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
+                <div class="flex gap-2 mb-5 text-yellow-500">
+                    <?php for ($i = 1; $i <= 5; $i++): ?>
+                        <label class="cursor-pointer">
+                            <input type="radio"
+                                   name="rating"
+                                   value="<?= $i ?>"
+                                   class="hidden">
+                            ★
+                        </label>
+                    <?php endfor; ?>
+                </div>
 
-            <label>Beoordeling</label>
-
-            <div class="review-stars">
-                <?php
-                for ($i = 1; $i < 6; $i++) {
-                    if ($i == 0) {
-                        echo "<label><input type='radio' name='rating' value='$i' required>★</label>";
-                    } else {
-                        echo "<label><input type='radio' name='rating' value='$i'>★</label>";
-                    }
-                }
-                ?>
-
-            </div>
-
-            <button type="submit">
-                Versturen
-            </button>
+                <button type="submit"
+                        class="bg-[#8f8a5f] text-white py-[12px] px-[30px] border-0 cursor-pointer hover:bg-[#3e5f6d] transition">
+                    Versturen
+                </button>
 
             </form>
 
