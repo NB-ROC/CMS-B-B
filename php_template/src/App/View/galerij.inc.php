@@ -1,6 +1,8 @@
-<div class="GalerijContainer">
-    <div class="GalerijTitle">Galerij</div>
-    <div class="GalerijSubText">
+<div class="flex flex-col w-[1400px] ml-[50px] h-[200px]">
+    <div class="text-[#ff5656] text-[30px] font-["Extra_Light",sans-serif] font-normal mb-[15px];
+    font-optical-sizing: auto">Galerij</div>
+    <div class="text-[#807070] text-[20px] font-["Extra_Light",sans-serif] font-normal mb-[60px];
+    font-optical-sizing: auto">
         Waar elegantie en rust samenkomen.<br />
         <br />
         Onze galerij toont de verfijnde afwerking, het stijlvolle interieur en
