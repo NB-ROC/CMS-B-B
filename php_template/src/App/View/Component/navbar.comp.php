@@ -2,7 +2,7 @@
 use App\Statics\Route;
 ?>
 
-<header class="header">
+<header >
 
     <div class="logo">
         <img src="/images/imagegroot.png" alt="Calm Corner hotel">
