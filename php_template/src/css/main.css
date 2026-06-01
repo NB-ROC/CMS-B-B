@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -250,19 +244,6 @@ nav a:hover {
 .luxe-suite {
   background-image: url(../images/luxeSuit.png);
   background-size: cover;
-}
-
-button {
-  padding: 14px;
-  background-color: #8a855c;
-  color: white;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3e5f6d;
 }
 
 .head-section {
@@ -861,91 +842,6 @@ h2 {
 
 .booking-button:hover {
   background-color: #ec4949;
-}
-
-/* ================= Upload files SECTION ================= */
-.upload-files-main-section {
-  height: 100vh;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
-
-.upload-file-styling {
-  border-radius: 15px;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px 15px;
-  width: fit-content;
-}
-
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-.reservering-input-check-out-date {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 5px 5px 15px;
-  border-width: 1px;
-  border-color: #6c6c6c;
-  border-style: solid;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: 0;
-}
-
-.reservering-date-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.total-persons-container {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 15px;
-  border-width: 1px;
-  border-color: #6c6c6c;
-  border-style: solid;
-  border-radius: 15px;
-}
-
-.total-persons-container > p {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.total-persons-container > input:focus {
-  outline: none;
-}
-
-.booking-button {
-  background-color: #ff5656;
-  color: white;
-  font-weight: bold;
-  border-radius: 15px;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-
-.booking-button:hover {
-  background-color: #ec4949;
-}
-
-/* ================= Upload files SECTION ================= */
-.upload-files-main-section {
-  height: 100vh;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
-
-.upload-file-styling {
-  border-radius: 15px;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px 15px;
-  width: fit-content;
 }
 
 /* ================= ADMIN SECTION ================= */
