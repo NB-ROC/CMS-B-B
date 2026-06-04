@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).parent
 # extend readme
 # parser = argparse.ArgumentParser(prog="orchestrator")
 
-load_dotenv(BASE_DIR / ".env")
+load_dotenv(BASE_DIR.parent / ".env")
 
 # needed folder constants and filename constants
 MODEL_DIR = BASE_DIR / "App" / "Models"
@@ -173,7 +173,7 @@ def make_table(name:str, cursor):
         (BACKUP_LAYOUT_DIR / name).mkdir(parents=True, exist_ok=True)
 
     with open(SQL_DIR / f"{DATABASE_LAYOUTFILE}{name}.sql", mode='w') as handle:
-        handle.write(f"{name}ID INT PRIMARY KEY auto_increment NOT NULL")
+        handle.write(f"--@phase one\n{name}ID INT PRIMARY KEY auto_increment NOT NULL")
 
     shutil.copy(SQL_DIR / f"{DATABASE_LAYOUTFILE}{name}.sql", BACKUP_LAYOUT_DIR / name / f"000{BACKUP_LAYOUTFILE}{name}.sql")
 
