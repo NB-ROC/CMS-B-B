@@ -14,7 +14,10 @@
     </div>
 </div>
 <div>
-    <div class="gallery">
+    <div class="p-[20px];
+    column-count: 2
+    column-gap: 10px w-full mb-[10px] rounded-[8px] block transition-transform duration-300 ease-in-out;
+    break-inside: avoid scale-[1.02]  ">
         <img src="images/002c3d69-1496-4f82-a20a-f538f8ef7934.avif" />
         <img src="images/4c01f9e9-8fee-412e-880e-92927bdce506.avif" />
         <img src="images/5febe8c9-4605-46f7-b89b-5c7de6f73305.avif" />

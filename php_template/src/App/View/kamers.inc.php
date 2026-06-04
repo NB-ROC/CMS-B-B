@@ -1,10 +1,12 @@
-<div class="kamers">
+<div class=" mb-[150px] w-full h-auto flex flex-col items-center">
   <h2>Onze Kamers</h2>
-  <span class="subtitle">Ontdek onze stijlvol ingerichte kamers, waar comfort en elegantie
+  <span class="text-[16px] font-["Extra_Light",sans-serif] font-normal not-italic text-[#000000af];
+    font-optical-sizing: auto">Ontdek onze stijlvol ingerichte kamers, waar comfort en elegantie
     samenkomen.</span>
 </div>
 <div class="TwinKamer">
-  <div class="TwinKamerTitle">Twin Kamer</div>
+  <div class="text-[#807070] text-[40px] font-["Extra_Light",sans-serif] font-normal ml-[50px];
+    font-optical-sizing: auto">Twin Kamer</div>
   <div class="TwinKamerText">
     Comfort voor twee, met volledige privacy. <br />Ideaal voor vrienden
     of familie. <br />Twee comfortabele bedden en een warme,
