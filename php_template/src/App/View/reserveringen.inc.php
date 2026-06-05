@@ -8,25 +8,29 @@
 ?>
 
 <!-- Main -->
-<div class="reservering-column-container h-">
+<div class="mx-auto my-5 flex w-[85%] flex-col rounded-[10px] bg-white px-[35px] pt-[15px] pb-[20px] shadow-md">
+    
     <!-- Room name -->
     <h2>Lorum ipsum</h2>
-    
-    <img src="images/luxeSuit.png" alt="Room-image">
 
-    <div class="reservering-row-container">
-        <div class="reservering-info-column-section">
-            <!-- Extra info section -->
-            <ul class="reservering-extra-info-container">
+    <img src="images/luxeSuit.png" alt="Room-image" class="aspect-[4/1] w-full rounded-[10px] object-cover">
+
+    <div class="mt-[25px] flex w-full flex-row justify-between">
+        
+        <!-- Info section -->
+        <div class="flex w-[47%] flex-col gap-5">
+            
+            <!-- Extra info -->
+            <ul class="flex flex-row flex-wrap gap-[10px] text-[#6c6c6c]">
                 <li>4 gasten</li>
                 <li>2 kamer</li>
                 <li>2 bedden</li>
                 <li>1 badkamer</li>
             </ul>
 
-            <!-- Room description -->
-            <div class="reservering-description">
-                <p>
+            <!-- Description -->
+            <div class="h-[180px] w-[125%] scale-x-[-1] overflow-y-scroll pr-[10px] box-border">
+                <p class="scale-x-[-1] text-black">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -41,33 +45,49 @@
             </div>
         </div>
 
-        <!-- Reservering section -->
-        <div class="reservering-booking-section">
-            <!-- action="php/reservering" -->
-            <form id="bookingFrom">
-                <!-- Checkin CheckOut section -->
-                <div class="reservering-date-container">
-                    <div class="reservering-input-check-in-date">
-                        <label class="reservering-date-text">Check in</label>
-                        <input id="checkIn" type="date" id="checkInDate" class="reservering-date-input" name="checkIn" value="<?php echo $today; ?>">
+        <!-- Booking section -->
+        <div class="flex flex-col gap-[10px] rounded-[15px] bg-white p-[15px] shadow-md">
+
+            <form id="bookingFrom" class="flex flex-col gap-4 text-1000 text-black">
+
+                <!-- Checkin / Checkout -->
+                <div class="flex flex-row gap-0">
+
+                    <!-- Check in -->
+                    <div class="flex flex-col rounded-l-[15px] border border-[#6c6c6c] pt-[5px] pr-[5px] pb-[5px] pl-[15px]">
+                        <label class="text-[0.8rem] font-bold">
+                            Check in
+                        </label>
+
+                        <input id="checkIn" type="date" name="checkIn" value="<?php echo $today; ?>" class="focus:outline-none">
                     </div>
 
-                    <div class="reservering-input-check-out-date">
-                        <label class="reservering-date-text">Check Out</label>
-                        <input id="checkOut" type="date" class="reservering-date-input" name="checkOut">
+                    <!-- Check out -->
+                    <div class="flex flex-col rounded-r-[15px] border border-l-0 border-[#6c6c6c] pt-[5px] pr-[5px] pb-[5px] pl-[15px]">
+                        <label class="text-[0.8rem] font-bold">
+                            Check Out
+                        </label>
+
+                        <input id="checkOut" type="date" name="checkOut" class="focus:outline-none">
                     </div>
                 </div>
-                <!-- Total person section -->
-                <div class="total-persons-container">
-                    <label for="totalPersons">Totaal personen -Max person: 4</label>
-                    <input id="totalPersons" value="1" type="number" min="1" step="1" max="4" name="persons">
-                </div>
 
-                <!-- Submit button -->
+                <!-- Total persons -->
+                <div class="flex flex-col rounded-[15px] border border-[#6c6c6c] px-[15px] py-[5px]">
+                    
+                    <label for="totalPersons" class="text-[0.8rem] font-bold">
+                        Totaal personen - Max person: 4
+                    </label>
+
+                    <input id="totalPersons" value="1" type="number" min="1" step="1" max="4" name="persons" class="focus:outline-none">
+                </div>
             </form>
-            <button class="booking-button" onclick="ValidateCheckOutDate()">Boek nu</button>
-        </div>
 
+            <!-- Button -->
+            <button class="rounded-[15px] bg-[#ff5656] p-[5px] text-[1.5rem] font-bold text-white hover:bg-[#ec4949]"onclick="ValidateCheckOutDate()">
+                Boek nu
+            </button>
+        </div>
     </div>
 </div>
 

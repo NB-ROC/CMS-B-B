@@ -1,61 +1,4 @@
-<style>
-    .admin-layout {
-        display: grid !important;
-        grid-template-columns: 280px 1fr !important;
-        width: 100% !important;
-        min-height: 80vh !important;
-        background: white !important;
-    }
-
-    .admin-menu {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-        border-right: 1px solid #ccc !important;
-        padding: 60px 30px !important;
-    }
-
-    .admin-btn {
-        background: none !important;
-        color: black !important;
-        border: none !important;
-        text-align: left !important;
-        font-size: 22px !important;
-        padding: 5px 0 !important;
-    }
-
-    .admin-btn.active {
-        color: #ff5656 !important;
-        font-weight: bold !important;
-    }
-
-    .admin-results {
-        padding: 60px !important;
-    }
-
-    .admin-section {
-        display: none !important;
-    }
-
-    .admin-section.active {
-        display: block !important;
-    }
-
-    .admin-menu-bottom {
-        margin-top: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 10px !important;
-    }
-
-    .admin-menu-bottom a {
-        color: black !important;
-        text-decoration: none !important;
-    }
-</style>
-
 <div class="admin-layout">
-
     <aside class="admin-menu">
         <button class="admin-btn active" onclick="showAdminSection('bookingen', this)">Admin</button>
         <button class="admin-btn" onclick="showAdminSection('contact', this)">Contact berichten</button>
@@ -68,7 +11,6 @@
     </aside>
 
     <main class="admin-results">
-
         <section id="bookingen" class="admin-section active">
             <h1>Alle boekingen</h1>
 
