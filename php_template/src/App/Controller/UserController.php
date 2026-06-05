@@ -9,7 +9,6 @@ class UserController
     public static function index()
     {
         $users = Users::get();
-
         return Route::render("users.index", ["Users" => $users]);
     }
 

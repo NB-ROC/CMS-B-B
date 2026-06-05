@@ -41,7 +41,6 @@ class Route
             return $selector;
         } else {
             foreach (Route::$routes as $key => $val) {
-
                 $pattern = preg_replace('/\{[^\/]+\}/', '([^/]+)', $key);
                 $pattern = "#^" . $pattern . "$#";
 
