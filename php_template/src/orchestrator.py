@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).parent
 # extend readme
 # parser = argparse.ArgumentParser(prog="orchestrator")
 
-load_dotenv(BASE_DIR.parent / ".env")
+load_dotenv(BASE_DIR / ".env")
 
 # needed folder constants and filename constants
 MODEL_DIR = BASE_DIR / "App" / "Models"
