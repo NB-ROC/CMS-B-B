@@ -15,7 +15,7 @@ use App\Statics\Route;
             </h2>
 
             <div class="mb-4">
-                <strong class="text-2xl">4.5</strong>
+                <strong class="text-[#c40000] text-2xl">4.5</strong>
                 <span class="text-yellow-500 text-xl ml-2">★★★★★</span>
             </div>
 

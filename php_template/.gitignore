@@ -2,3 +2,6 @@
 node_modules/
 venv
 History
+
+tailwind.css
+main.css
