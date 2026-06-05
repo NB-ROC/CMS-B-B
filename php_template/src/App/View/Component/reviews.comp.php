@@ -15,8 +15,8 @@ use App\Statics\Route;
             </h2>
 
             <div class="mb-4">
-                <strong class="text-[#c40000] text-2xl">4.5</strong>
-                <span class="text-yellow-500 text-xl ml-2">★★★★★</span>
+                <strong class="text-[#c40000] text-2xl">4/5</strong>
+                <span class="text-yellow-500 text-xl ml-2">★★★★</span>
             </div>
 
             <p class="text-gray-700">
@@ -28,7 +28,7 @@ use App\Statics\Route;
         <!-- RIGHT SIDE (FORM) -->
         <div class="w-1/2">
 
-            <h2 class="text-[24px] mb-[25px]">
+            <h2 class="text-[#c40000] text-[24px] mb-[25px]">
                 Review plaatsen
             </h2>
 
