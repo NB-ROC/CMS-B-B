@@ -5,42 +5,42 @@
         <button class="bg-transparent text-[#111] border-0 p-0 text-left text-[24px] cursor-pointer" onclick="showAdminSection('website', this)">Website opstellen</button>
 
         <div class="mt-auto flex flex-col gap-[12px]">
-            <a href="http://localhost:8000/">Home</a>
-            <a href="logout.php">Log out</a>
+            <a class="text-[#111] no-underline text-[22px" href="http://localhost:8000/">Home</a>
+            <a  class="text-[#111] no-underline text-[22px" href="logout.php">Log out</a>
         </div>
     </aside>
 
     <main class="p-[70px] bg-white">
         <section id="bookingen" class="block;">
-            <h1>Alle boekingen</h1>
+            <h1 class="text-[#111] text-[38px] mb-[35px]">Alle boekingen</h1>
 
-            <table>
+            <table class="w-full border-collapse bg-white">
                 <thead>
                     <tr>
-                        <th>Boeking ID</th>
-                        <th>Datum</th>
-                        <th>Reis</th>
-                        <th>Klant</th>
-                        <th>Bedrag</th>
-                        <th>Status</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Boeking ID</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Datum</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Reis</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Klant</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Bedrag</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>#10956</td>
-                        <td>17-06-2026</td>
-                        <td>Stedenreis Parijs</td>
-                        <td>Sarah Janssen</td>
-                        <td>€ 850</td>
-                        <td>Nieuw</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">#10956</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">17-06-2026</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Stedenreis Parijs</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Sarah Janssen</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">€ 850</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Nieuw</td>
                     </tr>
                     <tr>
-                        <td>#10843</td>
-                        <td>18-06-2026</td>
-                        <td>Strandvakantie Bali</td>
-                        <td>Mark de Vries</td>
-                        <td>€ 1200</td>
-                        <td>In afwachting</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">#10843</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">18-06-2026</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Strandvakantie Bali</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Mark de Vries</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">€ 1200</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">In afwachting</td>
                     </tr>
                 </tbody>
             </table>
@@ -52,20 +52,20 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Naam</th>
-                        <th>Email</th>
-                        <th>Onderwerp</th>
-                        <th>Bericht</th>
-                        <th>Actie</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Naam</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Email</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Onderwerp</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Bericht</th>
+                        <th class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Actie</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Anna Peeters</td>
-                        <td>anna@mail.com</td>
-                        <td>Vraag over Bali</td>
-                        <td>Is deze reis nog beschikbaar?</td>
-                        <td><button class="w-fit py-[12px] px-[20px]">Verwijderen</button></td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Anna Peeters</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">anna@mail.com</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Vraag over Bali</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]">Is deze reis nog beschikbaar?</td>
+                        <td class="p-[16px] border-b border-[#ddd] text-left text-[#111]"><button class="w-fit py-[12px] px-[20px]">Verwijderen</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -77,7 +77,7 @@
             <div class="w-full h-[130px] p-[12px]">
                 <h3>Home pagina</h3>
                 <label>Tekst</label>
-                <textarea>Welkom op onze website</textarea>
+                <textarea class="w-full h-[130px] p-[12px]">Welkom op onze website</textarea>
 
                 <label>Afbeelding</label>
                 <input type="file">
