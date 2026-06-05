@@ -1,14 +1,14 @@
-<div class="head-section">
-    <h2 class="head-section-header-text">Welkom bij Calm Corner</h2>
-    <p class="head-section-text">
+<div class="w-full h-[90vh] bg-[url('../images/houseStockImage.png')] bg-cover bg-gray-300 text-white p-[30px] box-border flex flex-col justify-center gap-[20px]">
+    <h2 class="text-[60px]">Welkom bij Calm Corner</h2>
+    <p class="text-[18px]">
         Ontspan in onze rustieke Bed & Breakfast in het hart van de Nederlandse natuur
     </p>
-    <div class="head-section-button-container">
-        <button class="button-red">Nu reserveren</button>
-        <button class="button-white">Meer informatie</button>
+    <div class="flex flex-row gap-[25px]">
+        <button class="bg-[#ff5656] text-white rounded-[10px]">Nu reserveren</button>
+        <button class="bg-white text-black rounded-[10px]">Meer informatie</button>
     </div>
 </div>
-<div class="faciliteiten-section">
+<div class="w-full flex flex-col items-center gap-[50px] p-[30px] pb-[100px]">
     <h2 class="head-section-header-text">Faciliteiten</h2>
     <div class="faciliteiten-info-container-row">
         <div class="faciliteiten-info-container-column">
@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<div class="room-section">
+<div class="w-full flex flex-col items-center gap-[50px] p-[30px] pb-[100px]">
     <h2 class="head-section-header-text">Onze kamers</h2>
     <div class="room-image-row-container">
         <div class="room-image-container bedroom">

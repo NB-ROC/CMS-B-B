@@ -225,6 +225,9 @@
   .ml-\[50px\] {
     margin-left: 50px;
   }
+  .box-border {
+    box-sizing: border-box;
+  }
   .block {
     display: block;
   }
@@ -236,6 +239,9 @@
   }
   .table {
     display: table;
+  }
+  .h-\[90vh\] {
+    height: 90vh;
   }
   .h-\[140px\] {
     height: 140px;
@@ -276,6 +282,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .items-center {
     align-items: center;
   }
@@ -294,11 +303,23 @@
   .gap-\[10px\] {
     gap: 10px;
   }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
+  .gap-\[25px\] {
+    gap: 25px;
+  }
+  .gap-\[50px\] {
+    gap: 50px;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
   .rounded-\[8px\] {
     border-radius: 8px;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -329,8 +350,14 @@
   .bg-\[\#f9f9f9\] {
     background-color: #f9f9f9;
   }
+  .bg-\[\#ff5656\] {
+    background-color: #ff5656;
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
@@ -341,6 +368,12 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\.\/images\/houseStockImage\.png\'\)\] {
+    background-image: url('../images/houseStockImage.png');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -349,6 +382,9 @@
   }
   .p-\[20px\] {
     padding: 20px;
+  }
+  .p-\[30px\] {
+    padding: 30px;
   }
   .p-\[60px\] {
     padding: 60px;
@@ -361,6 +397,9 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .text-center {
     text-align: center;
@@ -386,6 +425,9 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[20px\] {
     font-size: 20px;
   }
@@ -397,6 +439,9 @@
   }
   .text-\[32px\] {
     font-size: 32px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
