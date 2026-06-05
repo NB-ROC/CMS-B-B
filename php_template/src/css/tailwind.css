@@ -249,6 +249,9 @@
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -272,6 +275,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;

@@ -1,0 +1,1 @@
+reviewsID INT PRIMARY KEY auto_increment NOT NULL

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: Arial, sans-serif;
@@ -108,7 +108,7 @@ nav a:hover {
   resize: none;
 }
 
-button {
+/* button {
   padding: 14px;
   background-color: #8a855c;
   color: white;
@@ -119,7 +119,7 @@ button {
 
 button:hover {
   background-color: #3e5f6d;
-}
+} */
 
 .head-section {
   width: 100%;

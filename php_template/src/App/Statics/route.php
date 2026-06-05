@@ -10,7 +10,7 @@ class Route
 
     public static function linkToAction(string $action): string
     {
-        return "php/$action.php";
+        return "/php/$action.php";
     }
 
     public static function linkTo(string $location): string
