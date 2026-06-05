@@ -1,4 +1,8 @@
 <?php
+require_once("../AutoLoad.php");
+
+use App\Static\Route;
+
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -46,3 +50,4 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
 }
+header('Location:' . Route::linkTo("pages.home"));

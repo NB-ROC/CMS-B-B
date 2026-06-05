@@ -6,7 +6,7 @@
     <p class="text-black">Testing page to upload images for the website.</p>
 
     <!-- Upload file section -->
-    <input type="file" name="fileToUpload" id="fileToUpload" class="text-black rounded-[15px] border border-black px-[15px] py-[5px] w-fit">
+    <input type="file" name="fileToUpload" id="fileToUpload" class="text-black rounded-[15px] border border-black px-[15px] py-[5px] w-fit" required>
     
     <!-- Submit file section -->
     <input type="submit" value="Upload file" name="submit" class="booking-button">
