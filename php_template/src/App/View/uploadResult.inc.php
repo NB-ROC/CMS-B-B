@@ -8,12 +8,10 @@
         if($succes){
     ?>
             <img 
-            <?php
-                echo  'src="./images/testFile/'.$fileName.'"';
-            ?>
-            alt="Trulli" 
-            width="500" 
-            height="333">
+                <?php
+                    echo  'src="./images/testFile/'.$fileName.'"';
+                ?>
+            >
     <?php
         }else{
             echo "Nah";
