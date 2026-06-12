@@ -261,6 +261,9 @@
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[47\%\] {
     width: 47%;
   }
@@ -449,6 +452,9 @@
   }
   .py-\[12px\] {
     padding-block: 12px;
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
   }
   .pt-\[5px\] {
     padding-top: 5px;
