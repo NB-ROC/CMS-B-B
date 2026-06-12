@@ -3,6 +3,7 @@ require_once("AutoLoad.php");
 
 use App\Controller\DatabaseController;
 use App\Controller\UserController;
+use App\Controller\UploadImageController;
 use App\Statics\Route;
 
 session_start();
@@ -20,7 +21,9 @@ Route::register_routes([
     "/reserveringen" => "reserveringen",
     "/users" => [UserController::class, "index"],
     "/users/{user}" => [UserController::class, "show"],
-    "/uploadFile" => "uploadFile"
+    "/uploadFile" => "uploadFile",
+    "/processUpload"=> [UploadImageController::class,"index"],
+    "/uploadResult"=> "uploadResult",
 
 ]);
 
