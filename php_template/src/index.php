@@ -23,7 +23,6 @@ Route::register_routes([
     "/users/{user}" => [UserController::class, "show"],
     "/uploadFile" => "uploadFile",
     "/processUpload"=> [UploadImageController::class,"index"],
-    "/uploadResult"=> "uploadResult",
 
 ]);
 
