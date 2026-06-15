@@ -1,28 +1,14 @@
 <?php
 require_once("AutoLoad.php");
+require_once("Routes/web.php");
 
 use App\Controller\DatabaseController;
-use App\Controller\UserController;
 use App\Statics\Route;
+
 
 session_start();
 
 $DatabaseController = new DatabaseController();
-
-Route::register_routes([
-    "/" => "home",
-    "/admin" => "admin",
-    "/contact" => "contact",
-    "/galerij" => "galerij",
-    "/kamers" => "kamers",
-    "/login" => "login",
-    "/register" => "register",
-    "/reserveringen" => "reserveringen",
-    "/users" => [UserController::class, "index"],
-    "/users/{user}" => [UserController::class, "show"],
-    "/uploadFile" => "uploadFile"
-
-]);
 
 $request = Route::get_uri();
 ?>
@@ -60,9 +46,9 @@ $request = Route::get_uri();
         Route::render($request);
         ?>
     </main>
-        <footer>
+    <footer>
         <?php
-            Route::render_component("reviews", []);
+        Route::render_component("reviews", []);
         ?>
     </footer>
 </body>
