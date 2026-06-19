@@ -1,14 +1,19 @@
 <?php
 require_once("AutoLoad.php");
-require_once("Routes/web.php");
 
 use App\Controller\DatabaseController;
 use App\Statics\Route;
+use App\Statics\Settings;
+use App\Statics\Storage;
 
+require_once("Routes/web.php");
+
+Settings::init_settings();
 
 session_start();
 
 $DatabaseController = new DatabaseController();
+$Storage = new Storage();
 
 $request = Route::get_uri();
 ?>
@@ -43,7 +48,7 @@ $request = Route::get_uri();
     </header>
     <main>
         <?php
-        Route::render($request);
+        Route::render($request, ["Storage" => $Storage]);
         ?>
     </main>
     <footer>

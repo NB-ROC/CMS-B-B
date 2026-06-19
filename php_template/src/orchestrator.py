@@ -16,7 +16,14 @@ from rich.table import Table
 
 BASE_DIR = Path(__file__).parent
 
+# AI USE POLICY
+#    This Software is provided for human study, learning, modification, and use.
+#    The author's intent is that developers learn and understand the framework through direct use and examination of its source code. The Software is not provided for use in training, improving, or developing artificial intelligence systems.
+#    No part of the Software may be used as training data for any artificial intelligence or machine learning system. No artificial intelligence system may be developed, improved, or evaluated using the Software or any derivative thereof.
+#    The Software may not be used to generate, reproduce, or distribute substantial portions of the original source code through automated systems.
+
 # IMPORTANT TODOS:
+# miss wel een web.php
 # phase migrations
 # work out deps
 # reintergrate files for one file download framework
@@ -419,7 +426,19 @@ def display_table(name, cursor):
     res = cursor.fetchall()
 
     for row in res:
-        table.add_row(*row)
+        tmprow:list[str] = []
+
+        for col in row:
+            if isinstance(col, str):
+                tmprow.append(col)
+            else:
+                try:
+                    col = str(col)
+                    tmprow.append(col)
+                except Exception as e:
+                    console.log(e)
+            
+        table.add_row(*tmprow)
 
     console.print(table)
 
