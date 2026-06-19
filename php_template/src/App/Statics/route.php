@@ -8,14 +8,24 @@ class Route
 {
     private static array $routes = [];
 
+    public function fill_routes(){
+        //todo: implement web.php
+    }
+
     public static function linkToAction(string $action): string
     {
-        return "php/$action.php";
+        return "/php/$action.php";
     }
 
     public static function linkTo(string $location): string
     {
         return Route::get_route($location);
+    }
+
+    public static function redirect(string $routename){
+        require_once("../Routes/web.php");
+
+        return header('Location:' . Route::linkTo($routename));
     }
 
     public static function register_route(string $routename, array | callable | string $viewname): void
@@ -73,7 +83,7 @@ class Route
         }
     }
 
-    public static function render_component(string $name, $data): mixed
+    public static function render_component(string $name, mixed $data): mixed
     {
         extract($data);
 
@@ -92,7 +102,7 @@ class Route
                 break;
             }
         }
-
+        
         if ($found) {
             return $route;
         } else {
