@@ -1,6 +1,6 @@
-<div class="w-full h-[90vh] bg-[url('../images/houseStockImage.png')] bg-cover text-white p-[30px] flex flex-col justify-center gap-[20px]">
+<div class="w-full h-[90vh] bg-[url('../images/houseStockImage.png')] bg-cover text-white flex flex-col justify-center gap-[20px]">
 
-    <div class="pl-10">
+    <div class="ml-10">
         <h2 class="text-[60px]">
             Welkom bij Calm Corner
         </h2>
@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <div class="flex flex-row gap-[25px] pl-10">
+    <div class="flex flex-row gap-[25px] ml-10 w-full">
         <button class="bg-[#ff5656] text-white rounded-[10px] px-4 py-2">
             Nu reserveren
         </button>

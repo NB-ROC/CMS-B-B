@@ -247,6 +247,9 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .ml-\[50px\] {
     margin-left: 50px;
   }
@@ -580,9 +583,6 @@
   }
   .pb-\[100px\] {
     padding-bottom: 100px;
-  }
-  .pl-10 {
-    padding-left: calc(var(--spacing) * 10);
   }
   .pl-\[15px\] {
     padding-left: 15px;
