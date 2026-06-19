@@ -1,11 +1,23 @@
-<div class="w-full h-[90vh] bg-[url('../images/houseStockImage.png')] bg-cover bg-gray-300 text-white p-[30px] box-border flex flex-col justify-center gap-[20px]">
-    <h2 class="text-[60px]">Welkom bij Calm Corner</h2>
-    <p class="text-[18px]">
-        Ontspan in onze rustieke Bed & Breakfast in het hart van de Nederlandse natuur
-    </p>
-    <div class="flex flex-row gap-[25px]">
-        <button class="bg-[#ff5656] text-white rounded-[10px]">Nu reserveren</button>
-        <button class="bg-white text-black rounded-[10px]">Meer informatie</button>
+<div class="w-full h-[90vh] bg-[url('../images/houseStockImage.png')] bg-cover text-white p-[30px] flex flex-col justify-center gap-[20px]">
+
+    <div class="pl-10">
+        <h2 class="text-[60px]">
+            Welkom bij Calm Corner
+        </h2>
+
+        <p class="text-[18px]">
+            Ontspan in onze rustieke Bed & Breakfast in het hart van de Nederlandse natuur
+        </p>
+    </div>
+
+    <div class="flex flex-row gap-[25px] pl-10">
+        <button class="bg-[#ff5656] text-white rounded-[10px] px-4 py-2">
+            Nu reserveren
+        </button>
+
+        <button class="bg-white text-black rounded-[10px] px-4 py-2">
+            Meer informatie
+        </button>
     </div>
 </div>
 <div class="w-full flex flex-col items-center gap-[50px] p-[30px] pb-[100px]">

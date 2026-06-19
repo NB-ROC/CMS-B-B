@@ -479,9 +479,6 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-gray-300 {
-    background-color: var(--color-gray-300);
-  }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
@@ -542,6 +539,9 @@
   .px-\[100px\] {
     padding-inline: 100px;
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -580,6 +580,9 @@
   }
   .pb-\[100px\] {
     padding-bottom: 100px;
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
   }
   .pl-\[15px\] {
     padding-left: 15px;
