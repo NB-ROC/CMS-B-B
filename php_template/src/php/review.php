@@ -3,6 +3,7 @@
 require_once("../AutoLoad.php");
 
 use App\Statics\DatabaseSingleton;
+use App\Statics\Route;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     isset(DatabaseSingleton::$conn) ?: DatabaseSingleton::makeCon();
@@ -13,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $connHolder = DatabaseSingleton::$conn;
 
-    $sql = "INSERT INTO reviews (naam, bericht, rating) VALUES (:naam, :mess, :rating)";
+    $sql = "INSERT INTO reviews (name, mess, rating) VALUES (:naam, :mess, :rating)";
 
     $stmt = $connHolder->prepare($sql);
 
@@ -22,4 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ":mess" => $mess,
         ":rating" => $rating
     ]);
+
+
+    ('Location:' . Route::linkTo("home"));
 }

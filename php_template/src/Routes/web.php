@@ -2,6 +2,7 @@
 use App\Statics\Route;
 use App\Controller\UserController;
 
+
 Route::register_routes([
     "/" => "home",
     "/admin" => "admin",
@@ -13,5 +14,8 @@ Route::register_routes([
     "/reserveringen" => "reserveringen",
     "/users" => [UserController::class, "index"],
     "/users/{user}" => [UserController::class, "show"],
-    "/uploadFile" => "uploadFile",
+    "/uploadFile" => "uploadFile"
 ]);
+
+
+
