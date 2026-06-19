@@ -10,7 +10,7 @@
             <p>Nog geen account?</p>
 
             <a
-                href="index.php?page=register"
+                href="register"
                 class="text-red-500 hover:text-red-600 transition">
                 Aanmelden
             </a>
