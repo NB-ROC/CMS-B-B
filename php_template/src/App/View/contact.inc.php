@@ -24,7 +24,8 @@
                 <label for="message">Uw bericht</label>
                 <textarea class="p-[14px] mb-[18px] border border-[#ccc] text-[15px] bg[#f9f9f9] h-[140px] resize-none" id="message" name="message" placeholder="Uw bericht" rows="6" required></textarea>
 
-                <button type="submit">Bericht verzenden</button>
+                <button class = 'p-[14px] bg-[#8a855c] text-white border-none text-[15px] cursor-pointer hover:bg-[#3e5f6d]'
+                     type="submit">Bericht verzenden</button>
 
             </form>
         </div>
