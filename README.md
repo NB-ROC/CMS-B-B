@@ -9,7 +9,7 @@ Overdrachtsdocument –🏡 B&B Website
 2. Teaminformatie:
    Bij het begin waren wij 4 mensen in het team, na 1 week heeft Nataro inj onze team gekomen. Wij hadden allemaal verschillende rols , 2 pagina s per persoon aan het begin, daarna hebben wij zelf verschillende taken gepakt en gemaakt, een heeft meer gewerkt , een minder.
 3. Begeleider
-Onze begeleider was Nick Brock, een hele leuke , actieve en blije docent.Hij hielp ons altijd wanneer we het nodig hadden, gaf ons advies en feedback.
+Onze begeleider was, een hele leuke , actieve en blije docent.Hij hielp ons altijd wanneer we het nodig hadden, gaf ons advies en feedback.
 4.Functie Beschrijving
   -
 
