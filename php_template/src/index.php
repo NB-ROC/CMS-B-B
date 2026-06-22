@@ -5,10 +5,12 @@ use App\Controller\DatabaseController;
 use App\Controller\UserController;
 use App\Controller\UploadImageController;
 use App\Statics\Route;
+use App\Statics\Settings;
+use App\Statics\Storage;
 
-session_start();
+require_once("Routes/web.php");
 
-$DatabaseController = new DatabaseController();
+Settings::init_settings();
 
 Route::register_routes([
     "/" => "home",
@@ -24,7 +26,8 @@ Route::register_routes([
     "/uploadFile" => "uploadFile",
     "/processUpload"=> [UploadImageController::class,"index"],
 
-]);
+$DatabaseController = new DatabaseController();
+$Storage = new Storage();
 
 $request = Route::get_uri();
 ?>
@@ -59,12 +62,12 @@ $request = Route::get_uri();
     </header>
     <main>
         <?php
-        Route::render($request);
+        Route::render($request, ["Storage" => $Storage]);
         ?>
     </main>
-        <footer>
+    <footer>
         <?php
-            Route::render_component("reviews", []);
+        Route::render_component("reviews", []);
         ?>
     </footer>
 </body>
