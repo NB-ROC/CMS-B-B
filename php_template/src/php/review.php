@@ -25,5 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
 
 
-    ('Location:' . Route::linkTo("home"));
+    Route::redirect("home");
+
 }
