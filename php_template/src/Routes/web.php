@@ -14,7 +14,8 @@ Route::register_routes([
     "/reserveringen" => "reserveringen",
     "/users" => [UserController::class, "index"],
     "/users/{user}" => [UserController::class, "show"],
-    "/uploadFile" => "uploadFile"
+    "/uploadFile" => "uploadFile",
+    "/reviews" => "reviews",
 ]);
 
 

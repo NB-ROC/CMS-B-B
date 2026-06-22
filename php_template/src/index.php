@@ -41,7 +41,8 @@ $request = Route::get_uri();
                 "contact",
                 "register",
                 "login",
-                "uploadFile"
+                "uploadFile",
+                "reviews"
             ]
         ]);
         ?>
@@ -53,7 +54,9 @@ $request = Route::get_uri();
     </main>
     <footer>
         <?php
-        Route::render_component("reviews", []);
+
+        //         Route::render_component("reviews", []);
+        
         ?>
     </footer>
 </body>
