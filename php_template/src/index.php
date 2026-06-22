@@ -2,27 +2,18 @@
 require_once("AutoLoad.php");
 
 use App\Controller\DatabaseController;
-use App\Controller\UserController;
 use App\Statics\Route;
+use App\Statics\Settings;
+use App\Statics\Storage;
+
+require_once("Routes/web.php");
+
+Settings::init_settings();
 
 session_start();
 
 $DatabaseController = new DatabaseController();
-
-Route::register_routes([
-    "/" => "home",
-    "/admin" => "admin",
-    "/contact" => "contact",
-    "/galerij" => "galerij",
-    "/kamers" => "kamers",
-    "/login" => "login",
-    "/register" => "register",
-    "/reserveringen" => "reserveringen",
-    "/users" => [UserController::class, "index"],
-    "/users/{user}" => [UserController::class, "show"],
-    "/uploadFile" => "uploadFile"
-
-]);
+$Storage = new Storage();
 
 $request = Route::get_uri();
 ?>
@@ -57,12 +48,12 @@ $request = Route::get_uri();
     </header>
     <main>
         <?php
-        Route::render($request);
+        Route::render($request, ["Storage" => $Storage]);
         ?>
     </main>
-        <footer>
+    <footer>
         <?php
-            Route::render_component("reviews", []);
+        Route::render_component("reviews", []);
         ?>
     </footer>
 </body>

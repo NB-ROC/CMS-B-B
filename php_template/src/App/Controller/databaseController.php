@@ -17,7 +17,7 @@
 
     class DatabaseController
     {
-        private PDO $Conn;
+        private ?PDO $Conn;
 
         public function __construct()
         {
