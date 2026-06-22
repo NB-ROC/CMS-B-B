@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -125,18 +119,132 @@ nav a:hover {
   resize: none;
 }
 
-/* button {
-  padding: 14px;
-  background-color: #8a855c;
+.head-section {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../images/houseStockImage.png);
+  background-size: cover;
+  background-color: lightgray;
   color: white;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
-button:hover {
-  background-color: #3e5f6d;
-} */
+.head-section-header-text {
+  font-size: 60px;
+}
+
+.head-section-text {
+  font-size: 18px;
+}
+
+.button-red {
+  background-color: #ff5656;
+  color: white;
+  border-radius: 10px;
+}
+
+.button-white {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.head-section-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.faciliteiten-section,
+.room-section {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.faciliteiten-info-container-row {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faciliteiten-info-container-column {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faciliteiten-info-box-container {
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #d2b8b8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+.faciliteiten-info-box-container>p {
+  color: #d2b8b8;
+  font-size: 20px;
+}
+
+.faciliteiten-info-box-container>h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.faciliteiten-icon {
+  width: 40px;
+  height: fit-content;
+}
+
+.room-image-row-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room-image-container {
+  color: white;
+  border-radius: 30px;
+  height: 300px;
+  width: 300px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bedroom {
+  background-image: url(../images/bedroom.png);
+  background-size: cover;
+}
+
+.luxe-suite {
+  background-image: url(../images/luxeSuit.png);
+  background-size: cover;
+}
 
 .head-section {
   width: 100%;
@@ -737,88 +845,8 @@ h2 {
   background-color: #ec4949;
 }
 
-/* ================= Upload files SECTION ================= */
-.upload-files-main-section {
-  height: 100vh;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
-
-.upload-file-styling {
-  border-radius: 15px;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px 15px;
-  width: fit-content;
-}
-
-.reservering-input-check-out-date {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 5px 5px 15px;
-  border-width: 1px;
-  border-color: #6c6c6c;
-  border-style: solid;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: 0;
-}
-
-.reservering-date-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.total-persons-container {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 15px;
-  border-width: 1px;
-  border-color: #6c6c6c;
-  border-style: solid;
-  border-radius: 15px;
-}
-
-.total-persons-container > p {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.total-persons-container > input:focus {
-  outline: none;
-}
-
-.booking-button {
-  background-color: #ff5656;
-  color: white;
-  font-weight: bold;
-  border-radius: 15px;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-
-.booking-button:hover {
-  background-color: #ec4949;
-}
-
-/* ================= Upload files SECTION ================= */
-.upload-files-main-section {
-  height: 100vh;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
-
-.upload-file-styling {
-  border-radius: 15px;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px 15px;
-  width: fit-content;
-}
-
-/* ADMIN SECTION */
+/* ================= ADMIN SECTION ================= */
+/* ================= ADMIN SECTION ================= */
 
 .admin-layout {
   display: grid;
